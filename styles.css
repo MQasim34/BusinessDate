@@ -53,6 +53,7 @@ body {
     padding: 10px 20px;
     width: 100%;
     transition: all .2s ease-in-out;
+    text-transform: capitalize;
 }
 
 .mobile_headr .moboNav .items li a:hover {
