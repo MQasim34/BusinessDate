@@ -34,6 +34,29 @@ body {
 .mobile_headr .clseBtn {
     display: inline-flex;
     width: 100%;
+    justify-content: end;
+}
+
+.mobile_headr .moboNav .items {
+    width: 100%;
+}
+
+.mobile_headr .moboNav .items li {
+    width: 100%;
+
+}
+
+/* .mobile_headr .moboNav .items li:hover { */
+
+.mobile_headr .moboNav .items li a {
+    display: block;
+    padding: 10px 20px;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.mobile_headr .moboNav .items li a:hover {
+    background-color: #ffffff54;
 }
 
 .mobile_headr .clseBtn i {
