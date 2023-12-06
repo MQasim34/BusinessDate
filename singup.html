@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inria+Serif:wght@300;400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Zen+Kaku+Gothic+Antique:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="signUpwrapper">
+        <div class="flex md:flex-row flex-col">
+            <div
+                class="leftSingup md:flex hidden flex-col justify-center itmes-center max-w-[400px] md:m-0 m-auto w-[100%] md:h-[120vh] ">
+                <div class="signUp_logo">
+                    <a href="">
+                        <img src="assets/images/LOGO.png" alt="">
+                    </a>
+                    <div class="contentLeft">
+                        <h1>Partnership for Business Growth</h1>
+                        <h3>FIND YOUR SOULMATE ---MAKE THEM YOUR <br> BUSINESS PARTNER</h3>
+                    </div>
+                </div>
+                <div class="handShaking">
+                    <img src="assets/images/shaking.png" alt="logo">
+                </div>
+            </div>
+            <div class="rightSingup w-full">
+                <div class="signUp_topbar flex justify-between items-center">
+                    <div class="leftBar">
+                        <a href="index.html" class=" flex justify-center items-center gap-[4px]">
+                            <span><img src="assets/images/chevron-left.png" class="w-[24px] h-[24px]" alt=""></span>
+                            <span>Return Home</span>
+                        </a>
+                    </div>
+                    <div class="right_bar">
+                        <span>Aleady a Member ?</span>
+                        <a href="signIn.html" class="logInNow">log in now</a>
+                    </div>
+                </div>
+                <!--  -->
+
+                <div class=" SignUpform flex flex-col justify-between items-center md:pt-[70px] pt-[45px]">
+                    <div class="topTitles flex flex-col justify-between items-center gap-[6px]">
+                        <h1 class="md:text-[25px] text-[17px]">BECOME AN EXCLUSIVE MEMBERS</h1>
+                        <h3>SIGN UP and join the partnership</h3>
+                    </div>
+
+                    <form action="singup.html" class="mainsignUpform flex flex-col md:pt-[39px] mt-[20px] gap-[18px]">
+                        <div
+                            class="inner flex justify-beteen items-center gap-[10px] md:p-[20px] p-[10px] md:w-[420px] w-full">
+                            <span>
+                                <img src="assets/images/icon-user.png" class="w-[24px] h-[24px]" alt="">
+                            </span>
+                            <span class="w-full">
+                                <input type="text" placeholder="Johnson Doe" name="" class="w-full" required>
+                            </span>
+                        </div>
+                        <div
+                            class="inner flex justify-beteen items-center gap-[10px] md:p-[20px] p-[10px] md:w-[420px] w-full">
+                            <span>
+                                <img src="assets/images/icon-mail.png" class="w-[24px]" alt="">
+                            </span>
+                            <span class="w-full">
+                                <input type="text" placeholder="Example@gmail.com" name="" class="w-full" required>
+                            </span>
+                        </div>
+                        <div
+                            class="inner flex justify-beteen items-center gap-[10px] md:p-[20px] p-[10px] md:w-[420px] w-full">
+                            <span>
+                                <img src="assets/images/lock.png" class="w-[28px]" alt="">
+                            </span>
+                            <span class="w-full">
+                                <input type="password" placeholder="******" name="" class="w-full" id="password">
+                            </span>
+                            <span class="cursor-pointer" id="password-toggle">
+                                show
+                            </span>
+                        </div>
+
+                        <div class="inner md:w-[420px] w-full">
+                            <button type="submit"
+                                class="flex justify-between items-center w-full md:py-[20px] py-[10px] px-[45px] bg-[#24243E]">
+                                <span class="text-[#fff] text-[16px]">
+                                    Become a Member
+                                </span>
+                                <span>
+                                    <img src="assets/images/arrow-right.png" class="w-[28px]" alt="">
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!--  -->
+                    <div class="bottmForm flex flex-col gap-[10px] justify-center items-center pt-[30px] w-full ">
+                        <div class="inner2 sm:w-[380px] w-full">
+                            <button class="flex justify-between items-center py-[10px] w-full px-[45px]">
+                                <span>
+                                    <img src="assets/images/icons8-google.png" alt="">
+                                </span>
+                                <span class="w-full">Sign up with Google</span>
+                            </button>
+                        </div>
+                        <div class="inner2 sm:w-[380px] w-full">
+                            <button class="flex justify-between items-center  py-[10px] w-full px-[45px]">
+                                <span>
+                                    <img src="assets/images/icons8-facebook.png" alt="">
+                                </span>
+                                <span class="w-full">Sign up with Facebook</span>
+                            </button>
+                        </div>
+                        <div class="inner2 sm:w-[380px] w-full">
+                            <button class="flex justify-between items-center py-[10px] w-full px-[45px]">
+                                <span>
+                                    <img src="assets/images/apple.png" alt="">
+                                </span>
+                                <span class="w-full">Sign up with Google</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+
+                <!--  -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/styled.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

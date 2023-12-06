@@ -38,3 +38,21 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileBar.style.visibility = "hidden";
     })
 });
+
+
+// signUp form functionality
+
+document.addEventListener('DOMContentLoaded', function () {
+    const passwordInput = document.getElementById('password');
+    const  passwordToggle = document.getElementById('password-toggle');
+
+    passwordToggle.addEventListener('click', function () {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            passwordToggle.textContent = 'Hide';
+        } else {
+            passwordInput.type = 'password';
+            passwordToggle.textContent = 'Show';
+        }
+    });
+});

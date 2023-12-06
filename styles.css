@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #f9f9fb;
 }
 
 ::-webkit-scrollbar {
@@ -16,7 +17,8 @@ body {
 .mobile_headr {
     position: fixed;
     /* display: block; */
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(#800020bd, #00ffffa6);
     top: 0;
@@ -26,6 +28,21 @@ body {
     opacity: 0;
     backdrop-filter: blur(20px);
     visibility: hidden;
+    padding: 20px
+}
+
+.mobile_headr .clseBtn {
+    display: inline-flex;
+    width: 100%;
+}
+
+.mobile_headr .clseBtn i {
+    font-size: 20px;
+    display: inline-flex;
+    /* width: 100%; */
+    justify-content: end;
+    align-items: end;
+    cursor: pointer;
 }
 
 .nav_icon {
@@ -98,8 +115,57 @@ body {
 
 .header_banner .header_main .header_logo a img {
     width: 84px;
-    height: 84px;
+    /* height: 84px; */
     object-fit: cover;
+}
+
+.header_banner .header_main .right_header.formrgn {
+    margin-left: 45px;
+}
+
+.header_banner .header_main .right_header ul {
+    display: flex;
+}
+
+.header_banner .header_main .right_header ul li {
+    display: block;
+}
+
+/* @media only screen and (max-width: 1240px) {
+    .header_banner .header_main .right_header ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+} */
+
+@media only screen and (max-width: 1000px) {
+    .header_banner .header_main nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_banner .header_main .right_header ul {
+        flex-wrap: wrap;
+    }
+
+    .header_banner .header_main .right_header {
+        margin: 0;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .header_banner .language a,
+    .header_banner li a {
+        color: #000;
+        border-color: #000;
+    }
+
+    .header_banner li a:hover {
+        border-color: #000;
+    }
 }
 
 /* heroBanner */
@@ -168,6 +234,10 @@ body {
 
 /* media Query */
 @media only screen and (max-width:830px) {
+    .header_banner .header_main nav {
+        flex-direction: row;
+    }
+
     .right_header {
         display: none !important;
     }
@@ -952,4 +1022,172 @@ button.slick-prev.forpNext {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+/* Singup style */
+.signUpwrapper .leftSingup {
+    position: relative;
+    background: linear-gradient(to bottom, #00FFFF, #800020, #0F0C29);
+}
+
+.signUpwrapper .leftSingup .handShaking {
+    position: absolute;
+    top: 42%;
+    left: 0;
+    transform: translate(0, -50%);
+    z-index: 0;
+}
+
+.signUpwrapper .leftSingup .signUp_logo .contentLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+.signUpwrapper .leftSingup .signUp_logo .contentLeft h1 {
+    color: #FFF;
+
+    text-align: center;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    /* 119.995% */
+}
+
+.signUpwrapper .leftSingup .signUp_logo .contentLeft h3 {
+    color: #BDBDBD;
+    text-align: center;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.16px;
+    /* 176% */
+}
+
+.signUpwrapper .leftSingup .handShaking {}
+
+.signUpwrapper .leftSingup .signUp_logo {
+    padding: 90px 20px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.signUpwrapper .rightSingup {
+    padding: 20px;
+}
+
+.signUpwrapper .rightSingup .leftBar a {
+    color: #424242;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    text-align: center;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.53px;/
+}
+
+.signUpwrapper .rightSingup .right_bar {
+    color: #424242;
+
+    text-align: center;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.signUpwrapper .rightSingup .right_bar a {
+    color: #212121;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
+
+.signUpwrapper .rightSingup .SignUpform .topTitles h1 {
+    color: #212121;
+
+    text-align: center;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 44px
+}
+
+.signUpwrapper .rightSingup .SignUpform .mainsignUpform .inner {
+    border: 1px solid #757575;
+    background: #FFF;
+}
+
+.signUpwrapper .rightSingup .SignUpform .mainsignUpform .inner input {
+    color: #424242;
+    outline: none;
+    width: 100%;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.16px;
+}
+
+.signUpwrapper .rightSingup .SignUpform .mainsignUpform .inner button {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.16px
+}
+
+.signUpwrapper .rightSingup .inner2 {
+    border-radius: 8px;
+    border: 1px solid #C5C5C5;
+    background: #FFF;
+}
+
+.signUpwrapper .rightSingup .inner2 button {
+    color: #616161;
+    text-align: center;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.16px
+}
+
+.havingIssue {
+    margin-top: 42px;
+    color: #000;
+    text-align: right;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 12.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.53px;
+}
+
+@media only screen and (max-width: 360px) {
+    .signUpwrapper .rightSingup .signUp_topbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
 }
