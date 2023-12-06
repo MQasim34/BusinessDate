@@ -282,21 +282,21 @@ body {
         color: #000;
     }
 
-    .header_banner .heroContent h3 {
+    .heroContent h3 {
         font-size: 17px;
     }
 
-    .header_banner .heroContent h1 {
+    .heroContent h1 {
         font-size: 46px;
         line-height: 46px;
     }
 
-    .header_banner .heroContent p {
+    .heroContent p {
         font-size: 16px;
         line-height: normal;
     }
 
-    .header_banner .heroContent .heroBtn {
+    .heroContent .heroBtn {
         padding: 15px 12px;
     }
 
@@ -333,15 +333,15 @@ body {
         padding: 8px 13px;
     }
 
-    .header_banner .heroContent {
+    .heroContent {
         gap: 10px
     }
 
-    .header_banner .heroContent h3 {
+    .heroContent h3 {
         font-size: 14px;
     }
 
-    .header_banner .heroContent h1 {
+    .heroContent h1 {
         font-size: 35px;
         line-height: 35px;
     }
