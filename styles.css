@@ -199,7 +199,7 @@ body {
 
 .heroBanner .heroImg {
     position: absolute;
-    display: block;
+    /* display: block; */
     right: 0;
     width: 100%;
     z-index: -1;
