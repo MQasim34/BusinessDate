@@ -31,6 +31,53 @@ body {
     padding: 20px
 }
 
+/* forExtraordnary */
+/* .forExtraordnary {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} */
+
+.forExtraordnary .inner {
+    display: none;
+
+}
+
+@media only screen and (max-width: 1236px) {
+    .forExtraordnary {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .forExtraordnary .inner {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+        color: #fff;
+    }
+
+    .header_banner nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_banner .right_header .inner2 {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 830px) {
+    .forExtraordnary .inner {
+        display: none;
+    }
+}
+
+/* forExtraordnary */
+
 .mobile_headr .clseBtn {
     display: inline-flex;
     width: 100%;
@@ -185,6 +232,12 @@ body {
     .header_banner li a {
         color: #000;
         border-color: #000;
+    }
+
+    .header_banner a.dfkdsl {
+        color: #fff !important;
+        border-color: #fff !important;
+
     }
 
     .header_banner li a:hover {
@@ -895,9 +948,9 @@ button.slick-prev.forpNext {
     line-height: normal;
 }
 
-.gallery1 img {
-    border-radius: 20px;
-    /* width: 100%; */
+.gallery1 .iner img {
+    /* border-radius: 20px; */
+    width: 32.6%;
 }
 
 .gallery1 img.forborder1 {
@@ -940,11 +993,19 @@ button.slick-prev.forpNext {
         font-size: 23px;
     }
 
+    .gallery1 .iner img {
+        width: 48%;
+    }
+
 }
 
 @media only screen and (max-width: 575px) {
     .aboutWrapper .aboutSec2 p {
         font-size: 17px;
+    }
+
+    .gallery1 .iner img {
+        width: 100%;
     }
 
 }
@@ -959,32 +1020,62 @@ button.slick-prev.forpNext {
 /* galery2 */
 .galery2 {
     border-top: 3px dashed #0FF;
-    padding-top: 45px;
     margin-top: 45px;
+    padding: 45px 30px 0 30px;
 }
 
-.galery2 img {
-    height: 400px;
-    border-radius: 20px;
+.galery2 .inner {
+    display: flex;
 }
 
 .gallery3 {
-    max-width: 1300px;
-    margin: auto;
     border-top: 3px dashed #800020;
-    padding-top: 45px;
+    padding: 45px 30px 0 30px;
     margin-top: 45px;
 }
 
 .gallery3 .glry3top img {
-    max-width: 300px;
-    width: 100%;
-    border-radius: 20px;
+    width: 23%;
+    /* 
+    width: 300px;
+    
+    border-radius: 20px; */
+}
+
+@media only screen and (max-width: 767px) {
+    .gallery3 .glry3top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery3 .glry3top img {
+        width: 48%;
+    }
 }
 
 .gallery3 .glry3mdle img {
-    width: 640px;
-    border-radius: 20px;
+    width: 49%;
+    /* border-radius: 20px; */
+}
+
+@media only screen and (max-width: 575px) {
+    .gallery3 .glry3top img {
+        width: 47%;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .gallery3 .glry3mdle img {
+        width: 48%;
+    }
+
+}
+
+@media only screen and (max-width: 428px) {
+    .gallery3 .glry3mdle img {
+        width: 47%;
+    }
 }
 
 /* choosePlanwaper */
