@@ -221,6 +221,12 @@ body {
 
     .header_banner .header_main .right_header ul {
         flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .header_banner .header_main .right_header ul li a {
+        padding-top: 0;
     }
 
     .header_banner .header_main .right_header {
@@ -1468,4 +1474,375 @@ button.slick-prev.forpNext {
     .glryfourtop img {
         width: 43%;
     }
+}
+
+
+/* fine you Business Date here */
+.fybdhereWraper .fybdhereSlider {
+    max-width: 1360px;
+    margin: auto;
+}
+
+.fybdhereWraper .fybdhereSlider ul.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    bottom: 40px;
+}
+
+.fybdhereWraper .fybdhereSlider ul.slick-dots li {
+    border-radius: 20px;
+    opacity: 0.5;
+    background: #FFF;
+}
+
+.fybdhereWraper .fybdhereSlider ul.slick-dots button {
+    display: block;
+    width: 24px;
+    height: 6px;
+    padding: 0;
+    border: none;
+    font-size: 0;
+}
+
+.fybdhereWraper .fybdhereSlider ul.slick-dots li.slick-active {
+    background: #FFF;
+    opacity: 1;
+}
+
+.fybdhereWraper .fybdhereSlider .inner {
+    position: relative;
+}
+
+.fybdhereWraper .fybdhereSlider .inner .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fybdhereWraper .fybdhereSlider .inner .content h1 {
+    color: #FFF;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.fybdhereWraper .fybdhereSlider .inner .content h3 {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.fybdhereWraper .fybdhereSlider .inner .content .searchBar {
+
+    background: #fff;
+    margin-top: 90px;
+    width: 625px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 5px 5px 5px 20px;
+}
+
+.fybdhereWraper .fybdhereSlider .inner .content .searchBar input {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: transparent;
+}
+
+.fybdhereWraper .fybdhereSlider .inner .content .searchBar input:focus {
+    border: transparent;
+    border-width: 0;
+    border-radius: 60px;
+}
+
+.fybdhereWraper .fybdhereSlider .inner .content .searchBar input::placeholder {
+    border: transparent;
+    color: #888;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fybdhereWraper .fybdhereSlider .inner .content .searchBar button {
+    background-color: #C82021;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 767px) {
+    .fybdhereWraper .fybdhereSlider .inner .content {
+        margin-top: 45px;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar {
+        width: 500px;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar button {
+        padding: 14px;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar button img {
+        width: 14px;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .fybdhereWraper .fybdhereSlider .inner .content {
+        margin-top: 20px;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .fybdhereWraper .fybdhereSlider .inner .content {
+        margin-top: 0;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar {
+        padding: 3px 3px 3px 13px;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar button {
+        padding: 10px;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar input,
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar input::placeholder {
+        font-size: 14px;
+    }
+
+    .fybdhereWraper .fybdhereSlider ul.slick-dots {
+        bottom: 25px;
+    }
+
+    .fybdhereWraper .fybdhereSlider ul.slick-dots button {
+        width: 16px;
+        height: 4px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .fybdhereWraper .fybdhereSlider ul.slick-dots button {
+        display: none;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content {
+        justify-content: center;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content h3 {
+        font-size: 10px;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar {
+        width: 80%;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar input,
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar input::placeholder {
+        font-size: 11px;
+    }
+
+    .fybdhereWraper .fybdhereSlider .inner .content .searchBar button {
+        padding: 7px;
+    }
+
+}
+
+/* fybhtabs */
+.fybhtabs ul {
+    font-weight: 500;
+    display: flex;
+    /* max-width: 86%; */
+    padding: 0 14px;
+    margin: auto;
+    /* gap: 10px; */
+}
+
+.fybhtabs ul li {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+.fybhtabs ul li button {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 1px solid transparent;
+}
+
+.fybhtabs ul li button[aria-selected="true"] {
+    color: #800020;
+    border-bottom: 3px solid rgb(0, 255, 255);
+}
+
+@media only screen and (max-width: 767px) {
+    .fybhtabs ul li button {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .fybhtabs ul li button {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .fybhtabs ul {
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .fybhtabs ul li button {
+        font-size: 14px;
+    }
+
+    .fybhtabs ul li {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .fybhtabs ul li button {
+        font-size: 12px;
+    }
+}
+
+.fybhtabs ul li button:hover {
+    color: #800020;
+    border-bottom: 3px solid #00FFFF;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+
+}
+
+.fybhtabs {
+    border-bottom: 1px dashed #800020;
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard {
+    max-width: 300px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard .cardInner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px 45px 20px;
+    gap: 20px;
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard .cardInner .cardImg {
+    border-radius: 60%;
+    overflow: hidden;
+    border: 6px solid yellow;
+    border-left: 5px solid transparent;
+    padding: 2px;
+    width: 124px;
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard .cardInner .cardImg img {
+    border-radius: 60px;
+    width: 100%;
+    border: 3px solid #26235C;
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard .cardInner .cardCntntOuter .cardCntnt h1 {
+    color: #252525;
+
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard .cardInner .cardCntntOuter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard .cardInner .cardCntntOuter .cardCntnt h3 {
+    color: #26235C;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard .cardInner .cardCntntOuter .cardCntnt p {
+    color: #252525;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard .cardInner .cardCntntOuter .cardBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.fybdhereWraper .mainTabsCon .fybhCard .cardInner .cardCntntOuter .cardBtns button {
+    padding: 5px 80px;
+    border-radius: 10px;
+    background: #800020;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
