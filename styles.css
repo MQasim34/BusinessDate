@@ -361,6 +361,7 @@ body {
 
     .heroContent .heroBtn {
         padding: 15px 12px;
+        display: inline-block;
     }
 
     .header_banner .header_main .header_logo a img {
