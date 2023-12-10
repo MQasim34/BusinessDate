@@ -2200,12 +2200,17 @@ input {
 
     .BoxOuters .BoxInerers .mainBoxers {
         padding-bottom: 0;
+
     }
 }
 
 @media only screen and (max-width: 450px) {
     .BoxOuters .BoxInerers.lookingwidth .mainBoxers {
         flex-wrap: wrap;
+    }
+
+    .BoxOuters .BoxInerers.lookingwidth .mainBoxers h1 {
+        width: 100%;
     }
 
 }
