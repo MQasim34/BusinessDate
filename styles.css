@@ -43,7 +43,7 @@ body {
 
 }
 
-@media only screen and (max-width: 1254px) {
+@media only screen and (max-width: 1260px) {
     .forExtraordnary {
         display: flex;
         justify-content: space-between;
