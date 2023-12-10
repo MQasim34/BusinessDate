@@ -14,6 +14,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/slider.css">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <style>
+        .banks label {
+            display: block;
+            margin-bottom: 8px;
+            border: 2px solid #4D4D4D;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .banks label img {
+            fill: #0570DE;
+        }
+
+        .banks input {
+            display: none;
+        }
+
+        .cardForm label {
+            color: var(--grey-labels, #4F5B76);
+            /* font-family: SF Pro Display; */
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        @media only screen and (max-width: 375px) {
+            .AYB_sec2Box2 .cardForm input {
+                font-size: 12px;
+            }
+
+            .AYB_sec2Box2 .cardForm img {
+                width: 40%;
+                height: 40%;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -122,26 +167,128 @@
                 <label for="countries" class="block mb-2 lg:text-[35px] lg:text-[24px] text-[18px]">
                     Choose your business category
                 </label>
-                <div class="selectBoxIner">
+                <div id="step1">
 
-                    <select id="countries" class="bg-gray-50 text-gray-900 text-sm  block w-full p-2.5">
-                        <option>Accounting</option>
-                        <option value="" selected>Banking</option>
-                        <option value="">Doctor</option>
-                        <option value="">Lawyer</option>
-                        <option value="">Judge</option>
-                        <option value="">Nurse</option>
-                        <option value="">Teacher</option>
-                        <option value="">Other</option>
-                        <option value="">
-                            <!-- <input type="text" placeholder="Type category of your choice"> -->
-                        </option>
-                    </select>
+                    <div class="selectBoxIner">
+
+                        <select id="countries" class="bg-gray-50 text-gray-900 text-sm  block w-full p-2.5">
+                            <option>Accounting</option>
+                            <option value="" selected>Banking</option>
+                            <option value="">Doctor</option>
+                            <option value="">Lawyer</option>
+                            <option value="">Judge</option>
+                            <option value="">Nurse</option>
+                            <option value="">Teacher</option>
+                            <option value="">Other</option>
+                            <option value="">
+                                <!-- <input type="text" placeholder="Type category of your choice"> -->
+                            </option>
+                        </select>
+                    </div>
+                    <button class="float-right flex gap-2 items-center" type="button"
+                        onclick="nextStep('step1', 'step2')">
+                        <span>Next</span>
+                        <img src="assets/images/ADVERTISINGYOURBUSINESS/Vector.png" class="w-[7px]" alt="">
+                    </button>
                 </div>
-                <button class="float-right flex gap-2 items-center" type="button">
-                    <span>Next</span>
-                    <img src="assets/images/ADVERTISINGYOURBUSINESS/Vector.png" class="w-[7px]" alt="">
-                </button>
+
+
+                <!--  -->
+                <div class="selectBox" id="step2" style="display: none;">
+
+                    <!-- Box2  -->
+
+                    <div class="w-full h-screen flex flex-col justify-center items-center px-[14px]">
+
+                        <div class="AYB_sec2Box2">
+                            <div class="flex flex-col justify-center items-center sm:p-10 px-[5px] py-[30px]">
+                                <form>
+                                    <div class="banks flex justify-center flex-wrap gap-[4px]">
+                                        <label class="md:w-[124px] w-[40%]">
+                                            <input type="checkbox" class="checkbox" id="checkbox1">
+                                            <img src="assets/images/ADVERTISINGYOURBUSINESS/card.svg" alt="">
+                                            <span>card</span>
+                                        </label>
+                                        <label class="md:w-[124px] w-[40%]"><input type="checkbox" class="checkbox"
+                                                id="checkbox2">
+                                            <!-- <img src="assets/images/ADVERTISINGYOURBUSINESS/bitcoin.svg" alt=""> -->
+                                        </label>
+                                        <label class="md:w-[124px] w-[40%]"><input type="checkbox" class="checkbox"
+                                                id="checkbox3">
+                                            <img src="assets/images/ADVERTISINGYOURBUSINESS/giropay.svg" alt="">
+                                            <span>Giropay</span>
+                                        </label>
+                                        <label class="md:w-[124px] w-[40%]"><input type="checkbox" class="checkbox"
+                                                id="checkbox4">
+                                            <!-- <img src="assets/images/ADVERTISINGYOURBUSINESS/dots.svg" alt=""> -->
+                                        </label>
+                                    </div>
+                                    <!--  -->
+                                    <div class="cardForm flex flex-wrap flex-col gap-[10px]">
+                                        <div>
+                                            <label for="">card Number</label>
+                                            <div
+                                                class="flex gap-2 bg-white md:p-[10px] px-[10px] py-[5px] border-2 border-black rounded-[6px]">
+                                                <input type="text" placeholder="1234 1234 1234 1234" class="w-full">
+                                                <img src="assets/images/ADVERTISINGYOURBUSINESS/banks.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-wrap sm:gap-[10px] gap-[5px]">
+                                            <div class="md:w-[49%] md:h-[30px] h-[auto] w-full">
+                                                <label for="">Expiry</label>
+                                                <div
+                                                    class="flex md:gap-10 gap-2 bg-white md:p-[10px] px-[10px] py-[5px] border-2 border-black rounded-[6px]">
+                                                    <input type="date" placeholder="MM / YY" class="w-full">
+                                                </div>
+                                            </div>
+
+                                            <div class="md:w-[49%] md:h-[30px] h-[auto] w-full">
+                                                <label for="">CVC</label>
+                                                <div
+                                                    class="flex md:gap-10 gap-2 bg-white md:p-[10px] px-[10px] py-[5px] border-2 border-black rounded-[6px]">
+                                                    <input type="text" placeholder="CVC" class="w-full">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-wrap sm:gap-[10px] gap-0">
+                                            <div class="md:w-[49%] md:h-[30px] h-[auto] w-full">
+                                                <label for="">Country</label>
+                                                <div
+                                                    class="flex md:gap-10 gap-2 bg-white md:p-[10px] px-[10px] py-[5px] border-2 border-black rounded-[6px]">
+                                                    <input type="text" placeholder="MM / YY" class="w-full">
+                                                </div>
+                                            </div>
+
+                                            <div class="md:w-[49%] md:h-[30px] h-[auto] w-full">
+                                                <label for="">Postal code</label>
+                                                <div
+                                                    class="flexmd:gap-10 gap-2 bg-white md:p-[10px] px-[10px] py-[5px] border-2 border-black rounded-[6px]">
+                                                    <input type="text" placeholder="90210" class="w-full">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-center items-center md:pt-[20px] mt-0">
+                                            <button type="submit">SUBMIT PAYMENT</button>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--  -->
+                    <!-- Step 2 content goes here -->
+                    <button class="float-right flex gap-2 items-center" type="button"
+                        onclick="nextStep('step2', 'step3')">
+                        <span>Next</span>
+                        <img src="assets/images/ADVERTISINGYOURBUSINESS/Vector.png" class="w-[7px]" alt="">
+                    </button>
+                </div>
+                <!--  -->
+
+
             </div>
             <div class="selectBtns flex justify-between items-center :py-[45px] md:px-[76px] py-[25px] px-[20px]">
                 <a href="">ADVERTISE</a>
@@ -259,7 +406,7 @@
                         <li><a href="">Privacy Policy</a></li>
                         <li><a href="">Safety Tips</a></li>
                         <li><a href="">Contact us</a></li>
-                        <li><a href="">Cancel your subscription</a></li>
+                        <li><a href="cancelSubsrciption.html">Cancel your subscription</a></li>
                     </ul>
                 </div>
                 <div class="mdle_footer md:mr-[90px] mr-0">
@@ -286,15 +433,16 @@
                         <a href=""><img src="assets/images/facebook.png" target="_blank" alt=""></a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/home/@Rubyiris527198" target="_blank"><img src="assets/images/Twitter.png"
-                                alt=""></a>
+                        <a href="https://twitter.com/home/@Rubyiris527198" target="_blank"><img
+                                src="assets/images/Twitter.png" alt=""></a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
                             target="_blank"><img src="assets/images/linkedin.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/Rubyirs387" target="_blank"><img src="assets/images/insta.png" alt=""></a>
+                        <a href="https://www.instagram.com/Rubyirs387" target="_blank"><img
+                                src="assets/images/insta.png" alt=""></a>
                     </li>
                     <li>
                         <a href=""><img src="assets/images/youtube.png" target="_blank" alt="">
@@ -307,6 +455,43 @@
 
     <script src="assets/js/styled.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+        function nextStep(currentStepId, nextStepId) {
+            const currentStep = document.getElementById(currentStepId);
+            const nextStep = document.getElementById(nextStepId);
+
+            if (currentStep && nextStep) {
+                currentStep.style.display = 'none';
+                nextStep.style.display = 'block';
+            }
+        }
+    </script>
+    <script>
+        // JavaScript to handle checking/unchecking and change border color
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkboxes = document.querySelectorAll(".checkbox");
+
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener("change", function () {
+                    // Uncheck other checkboxes
+                    checkboxes.forEach(function (otherCheckbox) {
+                        if (otherCheckbox !== checkbox) {
+                            otherCheckbox.checked = false;
+                            updateBorderColor(otherCheckbox);
+                        }
+                    });
+
+                    // Update border color for the current checkbox
+                    updateBorderColor(checkbox);
+                });
+            });
+
+            function updateBorderColor(checkbox) {
+                const label = checkbox.closest("label");
+                label.style.borderColor = checkbox.checked ? "#0570DE" : "#4D4D4D";
+            }
+        });
+    </script>
 </body>
 
 </html>

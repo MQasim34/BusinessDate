@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BusinessDate | Advertise your business</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inria+Serif:wght@300;400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        .banks label {
+            display: block;
+            margin-bottom: 8px;
+            border: 2px solid #4D4D4D;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .banks label img {
+            fill: #0570DE;
+        }
+
+        .banks input {
+            display: none;
+        }
+
+        .cardForm label {
+            color: var(--grey-labels, #4F5B76);
+            /* font-family: SF Pro Display; */
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        @media only screen and (max-width: 375px) {
+            .AYB_sec2Box2 .cardForm input {
+                font-size: 12px;
+            }
+
+            .AYB_sec2Box2 .cardForm img {
+                width: 40%;
+                height: 40%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full h-screen flex justify-center items-center px-[14px]">
+        <div class="AYB_sec2Box3">
+            <div class="AYB_sec2Box3Img md:p-[20px] sm:p-[15px] p-[10px] md:w-[140px] sm:w-[100px] w-[60px]">
+                <img src="assets/images/tickCircle.png" class="w-full" alt="cirlceTick">
+            </div>
+            <div>
+                <h1 class="lg:text-[60px] md:text-[48px] sm:text-[36px] text-[24px] font-[500]">Thank you for
+                    subscribing!</h1>
+                <p class="lg:text-[34px] md:text-[24px] sm:text-[17px] text-[14px] font-[400]"> You have successfully
+                    subscribed to our list. We will let you know when we launch</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/styled.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        function nextStep(currentStepId, nextStepId) {
+            const currentStep = document.getElementById(currentStepId);
+            const nextStep = document.getElementById(nextStepId);
+
+            if (currentStep && nextStep) {
+                currentStep.style.display = 'none';
+                nextStep.style.display = 'block';
+            }
+        }
+    </script>
+    <script>
+        // JavaScript to handle checking/unchecking and change border color
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkboxes = document.querySelectorAll(".checkbox");
+
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener("change", function () {
+                    // Uncheck other checkboxes
+                    checkboxes.forEach(function (otherCheckbox) {
+                        if (otherCheckbox !== checkbox) {
+                            otherCheckbox.checked = false;
+                            updateBorderColor(otherCheckbox);
+                        }
+                    });
+
+                    // Update border color for the current checkbox
+                    updateBorderColor(checkbox);
+                });
+            });
+
+            function updateBorderColor(checkbox) {
+                const label = checkbox.closest("label");
+                label.style.borderColor = checkbox.checked ? "#0570DE" : "#4D4D4D";
+            }
+        });
+    </script>
+</body>
+
+</html>

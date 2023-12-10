@@ -1398,15 +1398,15 @@ button.slick-prev.forpNext {
 
 .AYB_wrapper .AYB_sec2 .selectBtns a {
     border-radius: 10px;
-    background: #0FF;
-    color: #000;
+    background: #800020;
+    color: #0FF;
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: 18px;
     letter-spacing: 1.2px;
-    box-shadow: 2px 4px 20.6px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 20.1px 0px rgba(0, 0, 0, 0.25);
     padding: 18px 46px;
 }
 
@@ -1427,7 +1427,7 @@ button.slick-prev.forpNext {
     }
 
     .AYB_wrapper .AYB_sec2 .selectBox .selectBoxIner {
-        height: 65vh;
+        height: auto;
     }
 }
 
@@ -1845,4 +1845,373 @@ button.slick-prev.forpNext {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+
+
+/*  */
+.cnclsbscrtn_wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    padding: 22px 14px;
+
+}
+
+.cnclsbscrtn_wrapper .cnclsbscrtn {
+    max-width: 1097px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cnclsbscrtn h3,
+.cnclsbscrtn h1 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.32px;
+}
+
+.cnclsbscrtn_wrapper .cnclsbscrtn p {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 144.444% */
+    letter-spacing: 0.54px
+}
+
+.cnclsbscrtn_wrapper .cnclsbscrtn .btns button {
+    border-radius: 35px;
+    border: 1px solid #000;
+    background: #FFF;
+    box-shadow: 2px 4px 20.5px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 25px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    /* line-height: 18px; */
+    letter-spacing: 0.54px;
+}
+
+@media only screen and (max-width: 767px) {
+    .cnclsbscrtn_wrapper .cnclsbscrtn p {
+        letter-spacing: normal;
+    }
+
+    .cnclsbscrtn_wrapper .cnclsbscrtn .btns button {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 428px) {
+    .cnclsbscrtn_wrapper .cnclsbscrtn .btns button {
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+}
+
+
+
+
+/* AYB_sec2Box2 */
+.AYB_sec2Box2 {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    background-color: #E9E9E9;
+}
+
+.AYB_sec2Box2 .innerBox2 label {
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.AYB_sec2Box2 .innerBox2 input~checked+label {
+    border-color: #00008B;
+}
+
+input:focus,
+input {
+    outline: none;
+}
+
+.AYB_sec2Box2 .innerBox2 input {
+    display: none;
+
+}
+
+.AYB_sec2Box2 .innerBox2 label svg {
+    fill: #00008B;
+}
+
+.cardForm button {
+
+    display: block;
+    background-color: #2F8AD0;
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+/* AYB_sec2Box3 */
+.AYB_sec2Box3 {
+    max-width: 1000px;
+    margin: 100%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding: 45px;
+    user-select: none;
+}
+
+.AYB_sec2Box3 .AYB_sec2Box3Img {
+    position: relative;
+    z-index: 10;
+}
+
+.AYB_sec2Box3 .AYB_sec2Box3Img::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 162, 109, 0.12);
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.AYB_sec2Box3 h1,
+.AYB_sec2Box3 p {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+
+/* AYB_sec2Box4 */
+.AYB_sec2Box4 h1 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.AYB_sec2Box4 form .inputgroup {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+}
+
+.AYB_sec2Box4 form:last-child .inputgroup {
+    align-items: start;
+}
+
+.AYB_sec2Box4 form label {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.AYB_sec2Box4 form input,
+.AYB_sec2Box4 form textarea {
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    max-width: 400px;
+    width: 100%;
+    outline: none;
+}
+
+.AYB_sec2Box4 form textarea {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .AYB_sec2Box4 form label {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .AYB_sec2Box4 form .inputgroup {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .AYB_sec2Box4 form label {
+        font-size: 14px;
+    }
+}
+
+
+
+/* BoxOuters */
+.BoxOuters {
+    background-color: #fff;
+    padding: 35px 50px 45px;
+}
+
+.BoxOuters label {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.BoxOuters .BoxInerers {
+    position: relative;
+    max-width: 550px;
+    width: 100%;
+    height: 60vh;
+}
+
+.BoxOuters .BoxInerers.lookingwidth {
+    max-width: 800px;
+    width: 100%;
+}
+
+
+.BoxOuters .BoxInerers .mainBoxers {
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 15px;
+    /* gap: 10px; */
+
+}
+
+.BoxOuters .BoxInerers .mainBoxers h1 {
+    width: 120px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 32px; */
+    font-style: normal;
+    font-weight: 500;
+    /* 45% */
+    letter-spacing: 1.2px;
+}
+
+.BoxOuters .BoxInerers.lookingwidth .mainBoxers h1 {
+    width: 387px;
+}
+
+.BoxOuters .BoxInerers .select_icon {
+    position: relative;
+    width: 100%;
+
+}
+
+.BoxOuters .BoxInerers .select_icon:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    right: 14px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    background-color: transparent;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+.BoxOuters .BoxInerers .select_icon select {
+    position: relative;
+    color: #000;
+    /* padding: 9px 0 0 2px; */
+    font-weight: 500;
+    text-transform: lowercase;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    height: 42px;
+    /* top: 3px; */
+}
+
+@media only screen and (max-width: 824px) {
+    .BoxOuters .BoxInerers.lookingwidth .mainBoxers h1 {
+        width: 50%;
+        display: block ruby;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .BoxOuters .BoxInerers .mainBoxers h1 {
+        width: 85px;
+    }
+
+    /* .BoxOuters .BoxInerers .select_icon select {
+        padding: 3px 0 0px 1px; */
+    /* } */
+}
+
+/*  */
+@media only screen and (max-width: 640px) {
+    .BoxOuters .BoxInerers .mainBoxers {
+        gap: 8px;
+    }
+
+    .BoxOuters .BoxInerers .mainBoxers h1 {
+        width: 68px;
+    }
+
+    /* .BoxOuters .BoxInerers .select_icon select {
+        padding: 3px 0 0 0;
+    } */
+}
+
+
+@media only screen and (max-width: 575px) {
+
+    .BoxOuters .BoxInerers .mainBoxers {
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .BoxOuters .BoxInerers.lookingwidth .mainBoxers {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .BoxOuters .BoxInerers .mainBoxers h1 {
+        width: 75px;
+    }
+
 }
