@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="assets/css/slider.css">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="assets/js/styled.js"></script>
-    <script src="assets/js/custom.js"></script>
 </head>
 
 <body>
+
     <!-- mobile Navigation starts -->
 
     <div class="mobile_headr" id="mobile_headr">
@@ -54,7 +54,6 @@
             </div>
         </div>
     </div>
-
     <!-- mobile Navigation Ends -->
 
     <div class="header_banner">
@@ -89,49 +88,68 @@
     </div>
 
 
-    <!-- cnclsbscrtn -->
-    <div class="cnclsbscrtn_wrapper md:pt[45px] pt-[30px]">
-        <form action="" class="cnclsbscrtn">
-            <div class="block">
-                <h1 class="md:text-[44px] md:text-left text-[24px] text-center font-[600]">Canceling your subscription
-                </h1>
-            </div>
-            <!--  -->
-            <div class="flex flex-col gap-[20px]">
-                <div>
-                    <p class="md:text-[18px] text-[14px]">
-                        It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its
-                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                        letters,
-                        as opposed to.
-                    </p>
-                    <p class="md:text-[18px] text-[14px]">It is a long established fact that a reader will be distracted
-                        by the readable content of a page
-                        when
-                        looking at its
-                        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-                        letters,
-                        as opposed to using
-                        'Content here, content here', making it look like readable English.</p>
+    <!-- conactInfo1 -->
+    <div class="conactInfo1">
+        <div class="infoInner flex gap-[10px] h-[100%]">
+            <div class="Infoleft flex flex-1 flex-col justify-between items-center ">
+                <div class="leftTop">
+                    <h1>Select an option:</h1>
                 </div>
-                <div class="flex flex-col gap-[10px]">
-                    <h3 class="texr-[18px] font-[600]">Please let us know why you're cancelling</h3>
-                    <textarea name="" id="" cols="10" rows="6" required class="p-[10px]"></textarea>
+                <div class="leftmdl flex flex-col gap-[20px] w-full">
+                    <div class="mdleInner flex pointer w-ful bg-white">
+                        <input type="radio" name="same" id="info1" class="hidden">
+                        <label for="info1" class="flex justify-between items-center border rounded w-full pl-[10px]">
+                            <div><img src="assets/images/fa_mobile.svg" alt=""></div>
+
+                            <div class="flex items-center h-[100%] sm:gap-[45px] gap-[10px]">
+                                <span class="callZoom">phone call</span>
+                                <span class="timing">30 MIn</span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="mdleInner flex pointer w-ful bg-white">
+                        <input type="radio" name="same" id="info2" class="hidden">
+                        <label for="info2" class="flex justify-between items-center border rounded w-full pl-[10px]">
+                            <div><img src="assets/images/zoom.png" alt=""></div>
+
+                            <div class="flex items-center h-[100%] sm:gap-[45px] gap-[10px]">
+                                <span class="callZoom">video meeting</span>
+                                <span class="timing">60 MIn</span>
+                            </div>
+                        </label>
+                    </div>
                 </div>
-                <p class="md:text-[18px] text-[14px]">
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its
-                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                    as opposed to
-                </p>
+                <div class="leftbottom">
+                    <a href="#" class="flex jusitfy-between items-center gap-[10px]">
+                        <span>next step</span>
+                        <span><img src="assets/images/Arrow3.png" class="w-[20px]" alt=""></span>
+                    </a>
+                </div>
             </div>
-            <!--  -->
-            <div class="btns md:pt-[40px] mt-0">
-                <button type="submit">Cancel my account</button>
+            <div class="infoRight flex flex-col justify-between items-center w-[334px] bg-white">
+                <div class="Righttop flex flex-row gap-[10px]">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                </div>
+                <div class="Rightmdle">
+                    <div class="flex flex-col items-center gap-[20px]">
+                        <img src="assets/images/confirm.png" class="w-[100px]" alt="">
+                        <h1 class="md:text-[26px] sm:text-[20px] text-18px">Schedule an appointment</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its
+                            layout.</p>
+                    </div>
+                </div>
+                <div class="Rightbottom flex flex-col gap-[0px] items-center">
+                    <span>561.450.6721</span>
+                    <span> <a href="LISAWOOMERS@GMAIL.COM">LISAWOOMERS@GMAIL.COM</a></span>
+                </div>
             </div>
-        </form>
+        </div>
     </div>
+    <script src="assets/js/custom.js"></script>
+
 </body>
 
 </html>

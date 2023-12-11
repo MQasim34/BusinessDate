@@ -2024,7 +2024,7 @@ input {
 }
 
 .AYB_sec2Box4 form:last-child .inputgroup {
-    align-items: start;
+    align-items: end;
 }
 
 .AYB_sec2Box4 form label {
@@ -2043,6 +2043,10 @@ input {
     max-width: 400px;
     width: 100%;
     outline: none;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    top: 2px;
 }
 
 .AYB_sec2Box4 form textarea {
@@ -2220,4 +2224,160 @@ input {
         width: 75px;
     }
 
+}
+
+
+/* conactInfo1 */
+.conactInfo1 {
+    max-width: 900px;
+    width: 100%;
+    margin: 45px auto 0;
+    /* background-color: red; */
+    height: 500px;
+    padding: 0 14px;
+}
+
+.conactInfo1 .infoInner {
+    background-color: #EEF0F2;
+    ;
+}
+
+.conactInfo1 .infoInner .Infoleft {
+    padding: 50px 45px 20px;
+}
+
+.conactInfo1 .infoInner .Infoleft .leftbottom a {
+    border-radius: 30px;
+    background: #800020;
+    box-shadow: 1px 5px 8.1px 0px rgba(0, 0, 0, 0.40);
+    padding: 10px 20px;
+    color: #0FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner {
+    width: 100%;
+}
+
+.conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner .callZoom {
+    color: #0B5CFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner .timing {
+    background: #800020;
+    color: #0FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 15px 35px;
+}
+
+.conactInfo1 .infoInner .leftmdl input:checked+label {
+    border-color: #000;
+}
+
+.conactInfo1 .infoInner .infoRight {
+    background: #FFF;
+    box-shadow: 19px 0px 25px -6px rgba(0, 0, 0, 0.25);
+    padding: 50px 33px 20px 33px;
+}
+
+.conactInfo1 .infoInner .infoRight .Righttop span {
+    border: 1px solid #800020;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.conactInfo1 .infoInner .infoRight .Righttop span:first-child {
+    background-color: #800020;
+}
+
+.conactInfo1 .infoInner .infoRight .Rightmdle h1 {
+    color: #000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100.5%;
+    /* 26.13px */
+}
+
+.conactInfo1 .infoInner .infoRight .Rightmdle p {
+    color: #494949;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.conactInfo1 .infoInner .infoRight .Rightbottom span {
+    color: #494949;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.conactInfo1 .infoInner .infoRight .Rightbottom span a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 824px) {
+    .conactInfo1 {
+        height: auto;
+        margin: auto;
+    }
+
+    .conactInfo1 .infoInner {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .conactInfo1 .infoInner .Infoleft {
+        width: 100%;
+    }
+
+    .conactInfo1 .infoInner .infoRight,
+    .conactInfo1 .infoInner .Infoleft {
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 513px) {
+
+    .conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner .callZoom,
+    .conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner .timing {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .conactInfo1 .infoInner .leftmdl img {
+        width: 30px;
+    }
 }
