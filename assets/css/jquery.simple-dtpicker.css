@@ -549,6 +549,10 @@ td {
 	}
 }
 
+.forhidden {
+	overflow-x: hidden;
+}
+
 
 @media only screen and (max-width: 360px) {
 	.datepicker>.datepicker_inner_container>.datepicker_calendar>.datepicker_table>tbody>tr>td {
