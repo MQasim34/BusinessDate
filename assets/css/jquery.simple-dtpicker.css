@@ -10,6 +10,15 @@
 	/* font: 15px/1.5 "Helvetica Neue", mplus-2c, Helvetica, Arial, "Hiragino Kaku Gothic Pro", Meiryo, sans-serif; */
 }
 
+@media only screen and (max-width:676px) {
+	.datepicker {
+		/* width: 50%; */
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
 /*
  * datepicker_header
 */
@@ -497,4 +506,60 @@ td {
 .show-red-dot {
 	visibility: visible;
 	/* Show the red dot when the radio is checked */
+}
+
+
+@media only screen and (max-width: 400px) {
+	.datepicker>.datepicker_inner_container>.datepicker_calendar>.datepicker_table>tbody>tr>td {
+		padding: 10px 6px;
+	}
+
+	.datepicker>.datepicker_inner_container>.datepicker_timelist>div.timelist_item {
+		padding: 5px;
+		font-size: 14px;
+	}
+
+	.fordtoss {
+		width: 10px;
+		height: 10px;
+	}
+
+	.dotsInner {
+		width: 4px;
+		height: 4px;
+	}
+
+	.datepicker>.datepicker_inner_container>.datepicker_calendar>.datepicker_table>tbody>tr>th {
+		font-size: 14px;
+	}
+
+	.datepicker>.datepicker_inner_container>.datepicker_timelist {
+		height: 240px !important;
+	}
+
+	.contectInfo3main a,
+	.contectInfo2main a,
+	.conactInfo1 .infoInner .Infoleft .leftbottom a {
+		padding: 7px 15px;
+		font-size: 14px;
+	}
+
+	.conactInfo1 .infoInner {
+		background-color: transparent;
+	}
+}
+
+
+@media only screen and (max-width: 360px) {
+	.datepicker>.datepicker_inner_container>.datepicker_calendar>.datepicker_table>tbody>tr>td {
+		padding: 8px 5px;
+	}
+
+	.datepicker>.datepicker_inner_container>.datepicker_timelist {
+		height: 220px !important;
+	}
+
+	.datepicker .datepicker_header .available {
+		font-size: 14px;
+	}
 }

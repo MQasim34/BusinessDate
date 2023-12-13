@@ -2,6 +2,18 @@
 <html leg="en">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-multi-step-form.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.multistepform({
+                container: 'multistepform-example-container',
+                form_method: 'GET',
+                crossDomain: true,
+            })
+        });
+    </script>
     <script src="assets/js/styled.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,7 +103,7 @@
     <!-- header-End -->
     <div class="conactInfo1">
         <div class="infoInner flex gap-[10px] h-[100%]" id="multistepform-example-container">
-            <div class="Infoleft relative flex-1">
+            <div class="Infoleft relative md:flex-1 flex-[auto]">
                 <div class="form" enter-class="h-[100%]">
                     <form action="" class="h-[100%]">
                         <div class=" flex gap-[10px] h-[100%]">
@@ -106,9 +118,10 @@
                                             class="flex justify-between items-center border rounded w-full pl-[10px]">
                                             <div><img src="assets/images/fa_mobile.svg" alt=""></div>
 
-                                            <div class="flex items-center h-[100%] sm:gap-[45px] gap-[10px]">
-                                                <span class="callZoom">phone call</span>
-                                                <span class="timing">30 MIn</span>
+                                            <div
+                                                class="flex items-center h-[100%] lg:gap-[30px] md:gap-[20px] gap-[10px]">
+                                                <span class="callZoom lg:text-[18px] md:text-[14px]">phone call</span>
+                                                <span class="timing lg:text-[18px] md:text-[14px]">30 MIn</span>
                                             </div>
                                         </label>
                                     </div>
@@ -118,9 +131,11 @@
                                             class="flex justify-between items-center border rounded w-full pl-[10px]">
                                             <div><img src="assets/images/zoom.png" alt=""></div>
 
-                                            <div class="flex items-center h-[100%] sm:gap-[45px] gap-[10px]">
-                                                <span class="callZoom">video meeting</span>
-                                                <span class="timing">60 MIn</span>
+                                            <div
+                                                class="flex items-center h-[100%] lg:gap-[30px] md:gap-[20px] gap-[10px]">
+                                                <span class="callZoom lg:text-[18px] md:text-[14px]">video
+                                                    meeting</span>
+                                                <span class="timing lg:text-[18px] md:text-[14px]">60 MIn</span>
                                             </div>
                                         </label>
                                     </div>
@@ -137,8 +152,8 @@
                     </form>
                 </div>
 
-                <div class="form flex justify-center items-center">
-                    <form action="" class="flex flex-col justify-center items-center">
+                <div class="form flex justify-center items-center ">
+                    <form action="" class="flex flex-col justify-center items-center gap-[20px]">
                         <div class="w-full">
                             <div id="date_picker"></div>
                         </div>
@@ -176,7 +191,7 @@
                     </form>
                 </div>
             </div>
-            <div class="infoRight flex flex-col justify-between items-center w-[334px] bg-white">
+            <div class="infoRight flex flex-col justify-between items-center max-w-[334px] w-full bg-white">
                 <div class="Righttop flex flex-row gap-[10px]">
                     <ul id="multistepform-progressbar">
                         <li class="active"></li>
@@ -188,7 +203,7 @@
                     <div class="flex flex-col items-center gap-[20px]">
                         <img src="assets/images/confirm.png" class="w-[100px]" alt="">
                         <h1 class="md:text-[26px] sm:text-[20px] text-18px">Schedule an appointment</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable
+                        <p class="md:text-[18px] sm:text-[14px] text-[12px]">It is a long established fact that a reader will be distracted by the readable
                             content of a
                             page when looking at its
                             layout.</p>
@@ -201,10 +216,6 @@
             </div>
         </div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
-    <script src="assets/js/jquery-multi-step-form.js"></script>
     <!-- <script src="assets/js/jquery-multi-step-form.js"></script> -->
     <script src="assets/js/jquery.simple-dtpicker.js"></script>
     <script src="assets/js/custom.js"></script>

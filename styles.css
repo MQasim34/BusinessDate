@@ -2277,17 +2277,18 @@ input {
 .conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner .callZoom {
     color: #0B5CFF;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-align: right;
 }
 
 .conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner .timing {
     background: #800020;
     color: #0FF;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -2350,7 +2351,7 @@ input {
     .conactInfo1 .infoInner {
         flex-direction: column-reverse;
         align-items: center;
-        padding: 20px 0;
+        padding: 20px;
     }
 
     .conactInfo1 .infoInner .Infoleft {
@@ -2363,6 +2364,12 @@ input {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    .conactInfo1 .infoInner {
+        padding: 10px;
+    }
+}
+
 @media only screen and (max-width: 513px) {
 
     .conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner .callZoom,
@@ -2372,7 +2379,7 @@ input {
     }
 
     .conactInfo1 .infoInner .leftmdl img {
-        width: 30px;
+        width: 20px;
     }
 }
 
