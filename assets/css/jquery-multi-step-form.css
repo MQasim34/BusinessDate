@@ -1,0 +1,158 @@
+#multistepform {
+	/* overflow-y: hidden; */
+	width: 100%;
+}
+
+/* #multistepform .bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -5;
+} */
+
+/* #multistepform .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 10000;
+} */
+
+#multistepform-container {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+
+#multistepform-container .Infoleft {
+	position: relative;
+}
+
+#multistepform-container .Infoleft .form {
+	margin: 0 5%;
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#multistepform-container .form:not(:first-of-type) {
+	display: none;
+}
+
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+#multistepform-progressbar {
+	margin-bottom: 10px;
+	overflow: hidden;
+	counter-reset: step;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+}
+
+#multistepform-progressbar li {
+	border: 1px solid #800020;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #0FF;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+#multistepform-progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 30px;
+	display: block;
+	font-size: 12px;
+	color: #0ff;
+	border-radius: 42px;
+	line-height: inherit;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#multistepform-progressbar li.active:before,
+#multistepform-progressbar li.active:after {
+	background: #800020;
+	color: #0FF;
+}
+
+#multistepform input,
+#multistepform textarea {
+	padding: 15px;
+	border-radius: 10px;
+	border: 1px solid #E6EAF5;
+	background: #FFF;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
+	/* text-transform: capitalize; */
+	outline: none;
+}
+
+
+#multistepform .button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+
+#multistepform .button:hover,
+#msform .button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+
+
+@media only screen and (max-width: 767px) {
+	#multistepform {
+		/* overflow-y: ; */
+	}
+
+	#multistepform-container {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.conactInfo1 .infoInner .Infoleft {
+		margin: 20px;
+		height: 100%;
+	}
+}

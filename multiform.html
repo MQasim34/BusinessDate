@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html leg="en">
+
+<head>
+    <script src="assets/js/styled.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inria+Serif:wght@300;400;700&family=Inter:wght@200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Zen+Kaku+Gothic+Antique:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-multi-step-form.css">
+    <!-- <link rel="stylesheet" href="assets/js2/jquery-multi-step-form.css"> -->
+    <link rel="stylesheet" href="assets/css/jquery.simple-dtpicker.css">
+</head>
+
+<body>
+    <!-- mobile Navigation starts -->
+
+    <div class="mobile_headr" id="mobile_headr">
+        <span id="clseBtn" class="clseBtn">
+            <i style="color: aliceblue;" class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="moboNav flex flex-col justify-between items-center h-[60%] pt-[45px]">
+            <ul class="items flex flex-col justify-ceenter items-start">
+                <li class="linkList"><a href="index.html" class="links">home</a></li>
+                <li class="linkList"><a href="" class="links">Merchandise</a></li>
+                <li class="linkList"><a href="choosePlan.html" class="links">Choose a plan</a></li>
+                <li class="linkList"><a href="about.html" class="links">About Us</a></li>
+                <li class="linkList"><a href="AdvertiseYourBusiness.html" class="links">Advertise your business</a></li>
+                <li class="linkList"><a href="FYBDhere.html" class="links">Find YBD Here</a></li>
+            </ul>
+            <div class="flex justiy-center items-center gap-[30px] md:text-[#fff] text-blck">
+                <ul class="flex justify-center items-center gap-[30px]">
+                    <li><a href="signIn.html"
+                            class="md:hover:border-white m-w-[810px]:border-black hover:border-black border-[2px] rounded-[30px] px-4 py-1 border-transparent transition-all">login</a>
+                    </li>
+                    <li><a href="singup.html"
+                            class=" rounded-[30px]  px-4 py-1 border-[2px] md:border-white border-black">sign
+                            up</a>
+                    </li>
+                </ul>
+                <div class="language">
+                    <a href="" class="flex justify-center items-center gap-1 font-[700]">
+                        EN
+                        <span><img src="assets/images/downArrow.png" alt=""></span>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile Navigation Ends -->
+
+    <div class="header_banner">
+        <header class="header_main">
+            <nav class="AdYrBu flex justify-between items-center flex-row">
+
+
+                <div class="header_logo">
+                    <a href="#">
+                        <img src="assets/images/LOGO.png" alt="">
+                    </a>
+                </div>
+                <!--  -->
+                <div class="right_header flex flex-1 justify-center items-center gap-2">
+                    <div class="navigation">
+                        <ul class="items flex justify-ceenter items-center gap-[15px]">
+                            <li class="linkList"><a href="index.html" class="links">home</a></li>
+                            <li class="linkList"><a href="about.html" class="links">About Us</a></li>
+                            <li class="linkList"><a href="choosePlan.html" class="links">Choose a plan</a></li>
+                            <li class="linkList"><a href="FYBDhere.html" class="links">Find YBD Here</a></li>
+                            <li class="linkList"><a href="" class="links">Merchandise</a></li>
+                            <li class="linkList"><a href="AdvertiseYourBusiness.html" class="links">Schedule a business
+                                    date</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_icon">
+                    <span class="cursor-pointer" id="nav_icon"><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!-- header-End -->
+    <div class="conactInfo1">
+        <div class="infoInner flex gap-[10px] h-[100%]" id="multistepform-example-container">
+            <div class="Infoleft relative flex-1">
+                <div class="form" enter-class="h-[100%]">
+                    <form action="" class="h-[100%]">
+                        <div class=" flex gap-[10px] h-[100%]">
+                            <div class=" flex flex-1 flex-col justify-between items-center h-[100%]">
+                                <div class="leftTop">
+                                    <h1>Select an option:</h1>
+                                </div>
+                                <div class="leftmdl flex flex-col gap-[20px] w-full">
+                                    <div class="mdleInner flex pointer w-ful bg-white">
+                                        <input type="radio" name="same" id="info1" class="hidden">
+                                        <label for="info1"
+                                            class="flex justify-between items-center border rounded w-full pl-[10px]">
+                                            <div><img src="assets/images/fa_mobile.svg" alt=""></div>
+
+                                            <div class="flex items-center h-[100%] sm:gap-[45px] gap-[10px]">
+                                                <span class="callZoom">phone call</span>
+                                                <span class="timing">30 MIn</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="mdleInner flex pointer w-ful bg-white">
+                                        <input type="radio" name="same" id="info2" class="hidden">
+                                        <label for="info2"
+                                            class="flex justify-between items-center border rounded w-full pl-[10px]">
+                                            <div><img src="assets/images/zoom.png" alt=""></div>
+
+                                            <div class="flex items-center h-[100%] sm:gap-[45px] gap-[10px]">
+                                                <span class="callZoom">video meeting</span>
+                                                <span class="timing">60 MIn</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="leftbottom">
+                                    <a href="#" type="button" class="flex next jusitfy-between items-center gap-[10px]"
+                                        name="next" value="Next">
+                                        <span>next step</span>
+                                        <span><img src="assets/images/Arrow3.png" class="w-[20px]" alt=""></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form flex justify-center items-center">
+                    <form action="" class="flex flex-col justify-center items-center">
+                        <div class="w-full">
+                            <div id="date_picker"></div>
+                        </div>
+                        <div class=" contectInfo3main flex gap-[10px]">
+                            <a href="#" name="previous" class="previous flex items-center gap-[30px]" value="Previous">
+                                <span><img src="assets/images/Arrow4.png" class="w-[20px]" alt=""></span>
+                                <span>previous</span>
+                            </a>
+                            <a href="#" name="next" class="flex next justify-between items-center gap-[50px]"
+                                value="Next">
+                                <span>next </span>
+                                <span><img src="assets/images/Arrow3.png" class="w-[20px]" alt=""></span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="contectInfo2main form">
+                    <form action="" class="flex flex-col items-center">
+                        <h2 class="fs-title">Contact Info</h2>
+                        <div class="contectInfo2">
+                            <input type="text" name="" placeholder="first name">
+                            <input type="text" name="" placeholder="Last name">
+                            <input type="email" name="" placeholder="Email address">
+                            <input type="phone" name="" placeholder="phone number">
+                            <textarea type="email" name="" placeholder="Notes"></textarea>
+                        </div>
+                        <div>
+                            <a href="#" type="button" name="next"
+                                class="flex next justify-between items-center gap-[20px]" value="Next">
+                                <span>finish </span>
+                                <span><img src="assets/images/Arrow3.png" class="w-[20px]" alt=""></span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="infoRight flex flex-col justify-between items-center w-[334px] bg-white">
+                <div class="Righttop flex flex-row gap-[10px]">
+                    <ul id="multistepform-progressbar">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="Rightmdle">
+                    <div class="flex flex-col items-center gap-[20px]">
+                        <img src="assets/images/confirm.png" class="w-[100px]" alt="">
+                        <h1 class="md:text-[26px] sm:text-[20px] text-18px">Schedule an appointment</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable
+                            content of a
+                            page when looking at its
+                            layout.</p>
+                    </div>
+                </div>
+                <div class="Rightbottom flex flex-col gap-[0px] items-center">
+                    <span>561.450.6721</span>
+                    <span> <a href="LISAWOOMERS@GMAIL.COM">LISAWOOMERS@GMAIL.COM</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-multi-step-form.js"></script>
+    <!-- <script src="assets/js/jquery-multi-step-form.js"></script> -->
+    <script src="assets/js/jquery.simple-dtpicker.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.multistepform({
+                container: 'multistepform-example-container',
+                form_method: 'GET',
+                crossDomain: true,
+            })
+        });
+
+        // date and time
+        $(function () {
+            $('#date_picker').dtpicker({
+                "calendarMouseScroll": false,
+                // "todayButton": true,
+            });
+        });
+    </script>
+</body>
+
+</html>

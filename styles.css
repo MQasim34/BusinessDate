@@ -9,8 +9,12 @@ body {
     background-color: #f9f9fb;
 }
 
+html {
+    --scrollbarBG: #CFD8DC;
+}
+
 ::-webkit-scrollbar {
-    display: none;
+    scrollbar-color: #0ff;
 }
 
 /* mobile_headr start */
@@ -2247,9 +2251,11 @@ input {
 }
 
 .conactInfo1 .infoInner .Infoleft {
-    padding: 50px 45px 20px;
+    margin: 50px 45px 20px;
 }
 
+.contectInfo3main a,
+.contectInfo2main a,
 .conactInfo1 .infoInner .Infoleft .leftbottom a {
     border-radius: 30px;
     background: #800020;
@@ -2296,22 +2302,6 @@ input {
     background: #FFF;
     box-shadow: 19px 0px 25px -6px rgba(0, 0, 0, 0.25);
     padding: 50px 33px 20px 33px;
-}
-
-.conactInfo1 .infoInner .infoRight .Righttop span {
-    border: 1px solid #800020;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #0FF;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
 }
 
 .conactInfo1 .infoInner .infoRight .Righttop span:first-child {
@@ -2384,4 +2374,14 @@ input {
     .conactInfo1 .infoInner .leftmdl img {
         width: 30px;
     }
+}
+
+/* contectInfo2 */
+.contectInfo2 input {
+    color: #858585;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
