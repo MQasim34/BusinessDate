@@ -356,6 +356,7 @@ html {
     .heroContent h1 {
         font-size: 46px;
         line-height: 46px;
+        letter-spacing: 0;
     }
 
     .heroContent p {
@@ -364,8 +365,10 @@ html {
     }
 
     .heroContent .heroBtn {
-        padding: 15px 12px;
+        padding: 12px 15px;
         display: inline-block;
+        font-size: 11px;
+        letter-spacing: .5px;
     }
 
     .header_banner .header_main .header_logo a img {
@@ -410,8 +413,13 @@ html {
     }
 
     .heroContent h1 {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 28px;
+        line-height: 27px;
+    }
+
+    .heroContent p {
+        font-size: 14px;
+        line-height: normal;
     }
 
     p br {
@@ -2406,6 +2414,6 @@ input {
 @media only screen and (max-width: 513px) {
     .conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner .callZoom {
         padding: 10px;
-        
+
     }
 }
