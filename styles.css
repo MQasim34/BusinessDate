@@ -192,6 +192,12 @@ html {
 
 }
 
+@media only screen and (max-width:1020px) {
+    .header_banner .header_main {
+        padding: 22px 14px;
+    }
+}
+
 .header_banner .header_main .header_logo a img {
     width: 84px;
     /* height: 84px; */
@@ -217,7 +223,7 @@ html {
     }
 } */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1066px) {
     .header_banner .header_main nav {
         display: flex;
         flex-direction: column;
@@ -369,6 +375,7 @@ html {
         display: inline-block;
         font-size: 11px;
         letter-spacing: .5px;
+        margin-top: 5px;
     }
 
     .header_banner .header_main .header_logo a img {
@@ -505,11 +512,18 @@ html {
     }
 
     section.homeSec2 {
-        padding-top: 45px;
+        padding-top: 20px;
+    }
+
+    .homeSec2 h1 {
+        font-size: 35px;
+        line-height: 1.2;
     }
 
 }
 
+
+/* @media only screen and (max-width: 575px) { */
 @media only screen and (max-width: 575px) {
 
     .homeSec2 h1 {
@@ -530,24 +544,27 @@ html {
     }
 
     section.homeSec2 {
-        padding-top: 30px;
+        padding-top: 5px;
     }
 
     .homeSec2 .sec2btn {
-        margin: 20px 0;
+        margin: 15px 0;
     }
 
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
     .homeSec2 h1 {
-        font-size: 23px;
-        line-height: 22px;
+        font-size: 17px;
+        /* line-height: 22px; */
         letter-spacing: .1px;
         /* margin-bottom: 10px; */
     }
 }
 
+.motivator h1 {
+    font-family: 'Roboto', sans-serif;
+}
 
 /* mindedSite */
 .mindedSite {
@@ -631,7 +648,7 @@ html {
     position: relative;
     display: block;
     max-width: 290px;
-    width: 100%;
+    /* width: 100%; */
     overflow: hidden;
 }
 
@@ -2095,8 +2112,8 @@ input {
 
 /* BoxOuters */
 .BoxOuters {
-    background-color: #fff;
-    padding: 35px 50px 45px;
+    /* background-color: #fff; */
+    /* padding: 35px 50px 45px; */
 }
 
 .BoxOuters label {
@@ -2333,7 +2350,7 @@ input {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: normal;
 }
 
@@ -2415,5 +2432,503 @@ input {
     .conactInfo1 .infoInner .Infoleft .leftmdl .mdleInner .callZoom {
         padding: 10px;
 
+    }
+}
+
+
+/*  */
+.merchandise {
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    /* font-size: 48px; */
+    font-style: normal;
+    /* font-weight: 500; */
+    /* line-height: normal; */
+    /* 57.84px */
+    /* border-radius: 5px 5px 150px 5px; */
+    /* overflow: hidden; */
+}
+
+.merchandise .inner {
+    border-radius: 5px 5px 150px 5px;
+    overflow: hidden;
+}
+
+.merchandise a {
+    color: #800020;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-flex;
+    padding: 10px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+}
+
+.merchandise .inner .headerPhone {
+    /* background-color: #0ff; */
+    /* width: 200px; */
+    /* height: 200px; */
+    background: radial-gradient(40% 60%, #0FF 0%, #800020 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.merchandise .inner .headerPhone img {
+    max-width: 363px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .merchandise .inner .headerPhone {
+
+        background: radial-gradient(49% 45%, #0FF 0%, #800020 100%);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .merchandise .inner .headerPhone {
+        background: radial-gradient(190px 180px, #0FF 0%, #800020 100%)
+    }
+}
+
+@media only screen and (max-width: 428px) {
+
+    .merchandise .inner .headerPhone {
+        background: radial-gradient(50% 50%, #0FF 0%, #800020 100%)
+    }
+}
+
+
+
+/*  */
+.merchandiseamin {
+    padding-bottom: 45px;
+}
+
+.merchandiseslider .sliderImg {
+    position: relative;
+}
+
+.merchandiseslider .sliderImg .cardCart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border-radius: 60px;
+    padding: 8px;
+
+}
+
+
+.merchandiseslider .sliderImg .mainImg img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.merchandiseslider .sliderImg .cardCart img {
+    width: 24px;
+}
+
+.merchandiseslider .slick-list {
+    width: 91%;
+    margin: auto;
+}
+
+.merchandiseslider .slick-list a h5 {
+    color: #6B6498;
+    /* font-family: SF Pro; */
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.merchandiseslider .slick-list .price {
+    color: #403A63;
+    /* font-family: SF Pro; */
+    font-family: 'sf_pro_displaymedium';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.merchandiseslider .slick-list a.buyNowbtn {
+    font-family: 'sf_pro_displaymedium';
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: baseline;
+    border-radius: 32px;
+    background: linear-gradient(97deg, #800020 1.17%, #0FF 101.53%);
+}
+
+.merchandiseamin .sldiertitle {
+    max-width: 1280px;
+    margin: auto;
+    width: 100%;
+    padding: 0 14px;
+    margin-bottom: 30px;
+}
+
+.merchandiseamin .sldiertitle h1,
+.merchandiseamin .sldiertitle h3 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.merchandiseamin .slick-prev {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 50px;
+}
+
+.merchandiseamin .slick-next {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 50px;
+}
+
+.merchandiseamin .slick-initialized .slick-slide {
+    padding: 10px;
+}
+
+.merchandiseamin ul.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.merchandiseamin ul.slick-dots li {
+    border-radius: 60px;
+    width: 10px;
+    height: 10px;
+    background-color: #800020;
+}
+
+.merchandiseamin ul.slick-dots li.slick-active {
+    background-color: #0ff;
+    border: 1px solid #800020;
+}
+
+.merchandiseamin ul.slick-dots li button {
+    font-size: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .merchandiseamin {
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .merchandiseslider .sliderImg .mainImg img {
+        height: 200px;
+    }
+
+    .merchandiseamin .sldiertitle {
+        margin-bottom: 10px;
+    }
+
+    .merchandiseamin {
+        padding-bottom: 20px;
+    }
+
+    .merchandiseslider .slick-list a h5 {
+        font-size: 17px;
+        padding-top: 6px;
+    }
+
+    .merchandiseslider .slick-list .price {
+        font-size: 16px;
+    }
+
+    .merchandiseslider .slick-list a.buyNowbtn {
+        font-size: 11px;
+        letter-spacing: .1px;
+        padding: 8px 17px;
+    }
+
+    .merchandiseslider .sliderImg .cardCart img {
+        width: 17px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .merchandiseslider .sliderImg .mainImg img {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .merchandiseslider .slick-list a h5 {
+        font-size: 17px;
+    }
+
+    .merchandiseslider .slick-list .price {
+        font-size: 16px;
+    }
+
+    .merchandiseslider .slick-list a.buyNowbtn {
+        font-size: 11px;
+    }
+
+    .merchandiseslider .sliderImg .cardCart img {
+        width: 17px;
+    }
+}
+
+/* merProducts */
+
+.merProducts .marcproBtns a {
+    border-radius: 20px;
+    background: #800020;
+    box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.30);
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px 20px;
+}
+
+.merProducts .productOuter .producCard {
+    width: 304px;
+    padding: 10px 0;
+}
+
+.merProducts .productOuter .producCard .cardImg {
+    border-radius: 5px;
+    background: #F2F5FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 303px;
+}
+
+.merProducts .productOuter .producCard .cardImg img {
+    width: 279px;
+    margin: auto;
+}
+
+.merProducts .cardContent .cardRadios label {
+    width: 20px;
+    height: 20px;
+    /* background-color: red; */
+    border: 1px solid transparent;
+    border-radius: 60px;
+}
+
+.merProducts .cardContent .cardRadios input:checked~label {
+    border: 2px solid #800020;
+
+}
+
+.merProducts .cardContent {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    /* font-size: 24px; */
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 640px) {
+    .merProducts .marcproBtns a {
+        /* padding: 7px 10px; */
+        border-radius: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 428px) {
+    .merProducts .marcproBtns a {
+        padding: 7px 10px;
+        border-radius: 10px;
+    }
+}
+
+/* @media only screen and (max-width: 360px) {
+    .merProducts .marcproBtns a {
+        padding: 7px 10px;
+        border-radius: 5px;
+    }
+
+} */
+
+/* sldier2 */
+.sldier2 .sliderImg {
+    position: relative;
+    border-radius: 5px;
+    background: #F2F5FF;
+}
+
+.sldier2 .slick-slide {
+    padding: 0 10px;
+}
+
+.sldier2 .sliderImg .mainImg img {
+    /* width: 270px; */
+    /* height: 270px; */
+    /* object-fit: cover; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.sldier2 .sliderImg .cardCart {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 8px;
+    background-image: url(assets/images/Merchandise/Polygon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 46px;
+    height: 46px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sldier2 h2 {
+    color: #FFF;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sldier2 label {
+    width: 20px;
+    height: 20px;
+    /* background-color: red; */
+    border: 1px solid transparent;
+    border-radius: 60px;
+}
+
+.sldier2 input:checked~label {
+    border: 2px solid #ffff;
+    padding: 5px;
+}
+
+
+.sldier2 .sliderImg .mainImg img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: scale-down;
+}
+
+.sldier2 .sliderImg .cardCart img {
+    width: 24px;
+}
+
+.sldier2 .price {
+    color: #616161;
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: line-through;
+    text-decoration-line: strikethrough;
+}
+
+.sldier2 s.slick-slide {
+    padding: 10px;
+}
+
+.sldier2 ul.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.sldier2 ul.slick-dots li {
+    border-radius: 60px;
+    width: 10px;
+    height: 10px;
+    background-color: #800020;
+    border: 1px solid #00FFFF;
+}
+
+.sldier2 ul.slick-dots li.slick-active {
+    border: 1px solid #00FFFF;
+    background-color: #00FFFF;
+    /* background-color: #800020; */
+    /* border: 1px solid #800020; */
+}
+
+.sldier2 ul.slick-dots li button {
+    font-size: 0;
+}
+
+
+.newArraivals .araivalTop h1 {
+    color: #1B234A;
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.newArraivals .araivalTop a {
+    color: #616161;
+    text-align: right;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sldier3 h2 {
+    color: #000;
+    font-size: 24px;
+}
+
+
+@media only screen and (max-width:480px) {
+
+    .sldier2 .sliderImg .mainImg img,
+    .merchandiseamin .merchandiseslider .sliderImg .mainImg img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+
+    .sldier2 .sliderImg .mainImg img,
+    .merchandiseamin .merchandiseslider .sliderImg .mainImg img {
+        width: 270px;
     }
 }
