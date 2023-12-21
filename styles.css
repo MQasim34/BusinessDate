@@ -2932,3 +2932,207 @@ input {
         width: 270px;
     }
 }
+
+
+
+/* modelMines */
+.modelMines .modelLeft .leftTop .lefttopleft .imgLeft>div {
+    width: 303px;
+    height: 359px;
+    background-color: #ccc;
+}
+
+.modelMines .modelLeft .leftTop .lefttopleft .imgRight>div {
+    width: 146px;
+    height: 175px;
+    background-color: #ccc;
+}
+
+.modelMines .modelLeft .leftTop .lefttopright {
+    flex: 0 0 auto;
+}
+
+.modelMines .modelLeft .leftTop .lefttopright form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modelMines .modelLeft .leftTop .lefttopright h1 {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.modelMines .modelLeft .leftTop .lefttopright p {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 37px;
+    /* 231.25% */
+}
+
+.modelMines .modelLeft .leftTop .lefttopright p span {
+    color: rgba(0, 0, 0, 0.70);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+}
+
+.modelMines .modelLeft .leftTop .lefttopright label {
+    width: 20px;
+    height: 20px;
+    /* background-color: red; */
+    border: 1px solid transparent;
+    border-radius: 60px;
+}
+
+.modelMines .modelLeft .leftTop .lefttopright input:checked~label {
+    border: 2px solid #800020;
+}
+
+.modelMines .modelLeft .leftTop .lefttopright button {
+    display: flex;
+    width: 279px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    background: #AF367B;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.modelMines .modelLeft .leftbottom .modelCard .img {
+    width: 92.2px;
+    height: 110.6px;
+    background-color: #ccc;
+
+}
+
+.modelMines .modelLeft .leftbottom .retitle {
+    margin-bottom: 5px;
+}
+
+.modelMines .modelLeft .leftbottom label {
+    width: 10px;
+    height: 10px;
+    /* background-color: red; */
+    border: 1px solid transparent;
+    border-radius: 60px;
+}
+
+.modelMines .modelLeft .leftbottom input:checked~label {
+    border: 2px solid #800020;
+}
+
+.modelMines .modelLeft .leftbottom .retitle,
+.modelMines .modelLeft .leftbottom .modelCard h1 {
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    /* font-size: 9.6px; */
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.modelMines .modelOuter {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+@media only screen and (max-width:1090px) {
+    .modelMines .modelOuter {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width:1070px) {
+
+    .modelMines .modelOuter .leftTop .lefttopleft {
+        flex-direction: column;
+    }
+
+    .modelMines .modelLeft .leftTop {
+        gap: 10px;
+    }
+
+    .modelMines .modelLeft .leftTop .lefttopleft .imgLeft>div {
+        width: 100%;
+    }
+
+    .modelMines .modelLeft .leftTop .lefttopleft .imgRight {
+        flex-wrap: nowrap;
+    }
+
+    .modelMines .modelLeft .leftTop .lefttopleft .imgRight>div {
+        width: 23.7%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .modelMines .modelLeft .leftTop .lefttopleft .imgLeft>div {
+        height: auto;
+    }
+
+    .modelMines .modelLeft .leftTop {
+        gap: 20px;
+    }
+
+    .modelMines .modelLeft .leftTop .lefttopright label {
+        width: 14px;
+        height: 14px;
+    }
+
+    .modelMines .modelLeft .leftTop .lefttopright p {
+        font-size: 14px;
+    }
+
+    .modelMines .modelLeft .leftTop .lefttopright p span {
+        font-size: 14px;
+    }
+
+    .modelMines .modelLeft .leftTop .lefttopright button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .modelMines .modelOuter {
+        padding: 30px 45px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .modelMines .modelLeft .leftTop .lefttopright h1 {
+        font-size: 12px;
+    }
+
+    .modelMines .modelLeft .leftTop .lefttopright p,
+    .modelMines .modelLeft .leftTop .lefttopright p span {
+        font-size: 12px;
+    }
+
+    .modelMines .modelLeft .leftTop .lefttopright button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .modelMines .modelLeft .leftTop {
+        flex-direction: column;
+    }
+}
