@@ -2726,7 +2726,8 @@ input {
     justify-content: center;
     align-items: center;
     height: 360px;
-    width: 303px;
+    max-width: 303px;
+    width: 100%;
 }
 
 .merProducts .productOuter .producCard .cardImg img {
@@ -3082,6 +3083,10 @@ input {
 }
 
 @media only screen and (max-width:767px) {
+    .merProducts .cardContent {
+        padding-top: 13px;
+    }
+
     .modelMines .modelLeft .leftTop .lefttopleft .imgLeft>div {
         height: auto;
     }
@@ -3134,5 +3139,9 @@ input {
 @media only screen and (max-width:480px) {
     .modelMines .modelLeft .leftTop {
         flex-direction: column;
+    }
+
+    .modelMines .modelOuter {
+        padding: 10px;
     }
 }
