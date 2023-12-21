@@ -2940,13 +2940,15 @@ input {
 .modelMines .modelLeft .leftTop .lefttopleft .imgLeft>div {
     width: 303px;
     height: 359px;
-    background-color: #ccc;
+    border-radius: 2.45px;
+    background: #F2F5FF;
 }
 
 .modelMines .modelLeft .leftTop .lefttopleft .imgRight>div {
     width: 146px;
     height: 175px;
-    background-color: #ccc;
+    border-radius: 2.45px;
+    background: #F2F5FF;
 }
 
 .modelMines .modelLeft .leftTop .lefttopright {
@@ -3014,7 +3016,8 @@ input {
 .modelMines .modelLeft .leftbottom .modelCard .img {
     width: 92.2px;
     height: 110.6px;
-    background-color: #ccc;
+    border-radius: 2px;
+    background: #F2F5FF;
 
 }
 
@@ -3089,6 +3092,8 @@ input {
 
     .modelMines .modelLeft .leftTop .lefttopleft .imgLeft>div {
         height: auto;
+        border-radius: 2.45px;
+        background: #F2F5FF;
     }
 
     .modelMines .modelLeft .leftTop {
