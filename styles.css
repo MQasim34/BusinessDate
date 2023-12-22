@@ -3150,3 +3150,202 @@ input {
         padding: 10px;
     }
 }
+
+/* career */
+.career {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding: 0 14px;
+
+}
+
+.career .careerTitle {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.career input {
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 12px 20px;
+}
+
+.career button {
+    position: relative;
+    height: 30px;
+    border-radius: 20px;
+    background: #800020;
+    color: #0FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0 15px;
+}
+
+.career .title2 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.career .careerCard {
+    border-radius: 20px;
+    border: 4px double #00008B;
+    max-width: 232px;
+    width: 100%;
+    height: 232px;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.career .careerCard label {
+    border-bottom: 3px double #0B5CFF;
+    line-height: 18px;
+    color: #0B5CFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.faq .faqtitle h1,
+.faq .faqtitle p {
+    color: #333;
+
+    /* Headings Bold/48px */
+    font-family: 'Raleway', sans-serif;
+    /* font-size: 48px; */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63.984px;
+    /* 133.3% */
+}
+
+.faq button {
+    background-color: #fff;
+    padding: 30px;
+    color: #000 !important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+
+.footerContact {
+    margin: auto;
+    height: 500px;
+}
+
+.footerContact .maincontact {
+    background: #0FF;
+    box-shadow: 4px 4px 11.3px 0px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    /* height: 500px; */
+
+}
+
+.footerContact .maincontact .left h1,
+.footerContact .maincontact .left p {
+    color: #800020;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.footerContact .maincontact .left input,
+.footerContact .maincontact .left textarea {
+    color: #800020;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    border-bottom: 2px solid #800020;
+    outline: none;
+    padding: 0 10px;
+}
+
+.footerContact .maincontact .left textarea::placeholder,
+.footerContact .maincontact .left input::placeholder {
+    color: #800020;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerContact .maincontact .left textarea {
+    resize: none;
+}
+
+.footerContact .maincontact .left form button {
+    border-radius: 20px;
+    background: #800020;
+    color: #0FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2px 20px 3px 20px;
+    text-transform: capitalize;
+}
+
+.footerContact .right {
+    background: linear-gradient(148deg, #0FF 0%, #800020 100%);
+}
+
+.footerContact .right a {
+    max-width: 200px;
+    width: 100%;
+    /* height: 200px; */
+}
+
+.footerContact .right p {
+    color: #0FF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media only screen and (max-width:640px) {
+
+    .footerContact .maincontact .left textarea,
+    .footerContact .maincontact .left input {
+        border-bottom: 1px solid;
+    }
+
+    .footerContact .right a {
+        width: 150px;
+    }
+
+    .footerContact .maincontact .left textarea::placeholder,
+    .footerContact .maincontact .left input::placeholder {
+        font-size: 14px;
+    }
+
+    .footerContact .right a {
+        width: 120px;
+    }
+}
