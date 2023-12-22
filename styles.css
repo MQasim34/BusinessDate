@@ -3227,6 +3227,10 @@ input {
     cursor: pointer;
 }
 
+.faq .faqtitle h1 {
+    margin-bottom: 10px;
+}
+
 .faq .faqtitle h1,
 .faq .faqtitle p {
     color: #333;
@@ -3236,7 +3240,7 @@ input {
     /* font-size: 48px; */
     font-style: normal;
     font-weight: 700;
-    line-height: 63.984px;
+    /* line-height: 63.984px; */
     /* 133.3% */
 }
 
