@@ -1145,10 +1145,10 @@ button.slick-prev.forpNext {
 
 
 /* cpsection */
-.cpsection {
+/* .cpsection {
     border-top: 3px dashed #800020;
     border-bottom: 3px dashed #0FF;
-}
+} */
 
 .cpsection .cpcard {
     max-width: 350px;
@@ -1482,7 +1482,7 @@ button.slick-prev.forpNext {
 }
 
 .glryfourtop img {
-    width: 23%;
+    width: 24%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1502,11 +1502,15 @@ button.slick-prev.forpNext {
     .glryfourtop img {
         width: 47%;
     }
+
+    .glryfourtop {
+        gap: 10px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
     .glryfourtop img {
-        width: 43%;
+        width: 48%;
     }
 }
 
@@ -2057,7 +2061,7 @@ input {
 }
 
 .AYB_sec2Box4 form:last-child .inputgroup {
-    align-items: end;
+    align-items: start;
 }
 
 .AYB_sec2Box4 form label {
@@ -3347,5 +3351,208 @@ input {
 
     .footerContact .right a {
         width: 120px;
+    }
+}
+
+/* testimonial */
+.testimonial {
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 25px;
+    margin: auto;
+}
+
+.testimonial h1.testTitle {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.testimonial form {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 24px; */
+    font-style: normal;
+    font-weight: 500;
+}
+
+.testimonial form input {
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+}
+
+.testimonial form .formMain .formGroup input {
+    padding: 0 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.testimonial form .formMain .formGroup label {
+    flex: 0 0 auto;
+    font-size: 24px;
+}
+
+.testimonial form .formMain .formGroup textarea {
+    border: none;
+    background-image: -webkit-linear-gradient(left, transparent 10px, transparent 10px), -webkit-linear-gradient(right, transparent 10px, transparent 10px), -webkit-linear-gradient(transparent 30px, #000 30px, #000 31px, transparent 31px);
+    background-image: -moz-linear-gradient(left, transparent 10px, transparent 10px), -moz-linear-gradient(right, transparent 10px, transparent 10px), -moz-linear-gradient(transparent 30px, #000 30px, #000 31px, transparent 31px);
+    background-image: -ms-linear-gradient(left, transparent 10px, transparent 10px), -ms-linear-gradient(right, transparent 10px, transparent 10px), -ms-linear-gradient(transparent 30px, #000 30px, #000 31px, transparent 31px);
+    background-image: -o-linear-gradient(left, transparent 10px, transparent 10px), -o-linear-gradient(right, transparent 10px, transparent 10px), -o-linear-gradient(transparent 30px, #000 30px, #000 31px, transparent 31px);
+    background-image: linear-gradient(left, transparent 10px, transparent 10px), linear-gradient(right, transparent 10px, transparent 10px), linear-gradient(white 30px, #000 30px, #000 31px, white 31px);
+    background-size: 100% 100%, 100% 100%, 100% 31px;
+    line-height: 31px;
+    font-family: Arial, Helvetica, Sans-serif;
+    padding: 8px;
+    resize: none;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .testimonial form .formMain .formGroup label {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .testimonial form .formMain .formGroup label {
+        font-size: 14px;
+    }
+
+    .testimonial form .formMain textarea,
+    .testimonial form .formMain .formGroup,
+    .testimonial form .formMain .formGroup input {
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        padding: 0 0 0 2px;
+        font-weight: 400;
+        font-size: 17px;
+    }
+}
+
+.testimonial .title2 {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    /* text-transform: capitalize; */
+}
+
+.testimonial .title2 span {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 30px; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.testimonial .careerCard {
+    border-radius: 20px;
+    border: 4px double #00008B;
+    max-width: 232px;
+    width: 100%;
+    height: 232px;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial .careerCard label {
+    border-bottom: 3px double #0B5CFF;
+    line-height: 18px;
+    color: #0B5CFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.testimonial button {
+    position: relative;
+    height: 30px;
+    border-radius: 20px;
+    background: #800020;
+    color: #0FF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 3px 20px;
+    text-transform: capitalize;
+}
+
+
+/* quickdos */
+.quickdostitle h1 {
+    color: var(--Text-Title-Text, #333);
+    font-variant-numeric: lining-nums proportional-nums;
+
+    /* Headings Bold/48px */
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 63.984px; */
+    /* 133.3% */
+    text-align: center;
+}
+
+/* .quickdoscon p { */
+.quickdoscon p {
+    color: var(--Text-Title-Text, #333);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    /* font-style: normal; */
+    font-weight: 600;
+    /* line-height: 22px; */
+    /* 122.222% */
+}
+
+
+/*  quickdosmain*/
+.quickdosmain .numbers {
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.quickdosmain .inner h1 {
+    color: #000;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.quickdosmain .inner p {
+    color: var(--Text-Title-Text, #333);
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:575px) {
+
+    .quickdosmain .inner p {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+    .quickdosmain .numbers {
+        font-size: 100px;
     }
 }
