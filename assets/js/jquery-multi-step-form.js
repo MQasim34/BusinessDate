@@ -72,6 +72,7 @@
                 complete: function () {
                     if (!FORM.next_fs[0]) {
                         FORM._close();
+                        window.location.href = '../../index.html';
                     }
                     FORM.current_fs.hide();
                     FORM.current_fs = FORM.next_fs;

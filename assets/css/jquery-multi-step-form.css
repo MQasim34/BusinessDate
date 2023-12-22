@@ -116,8 +116,9 @@
 	align-items: center;
 }
 
-#multistepform-progressbar li.active:before,
-#multistepform-progressbar li.active:after {
+/* #multistepform-progressbar li.active:after  */
+
+#multistepform-progressbar li.active:before {
 	background: #800020;
 	color: #0FF;
 }
