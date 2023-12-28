@@ -4,35 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>SVG Color Change</title>
+    <title>Document</title>
+    <!-- Add this to the head section of your HTML file -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-    <input type="checkbox" id="colorCheckbox"> Change Color
-    <svg id="coloredSvg" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-        <!-- Your SVG content goes here -->
-        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-    </svg>
-    <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get the checkbox and SVG element
-            const checkbox = document.getElementById('colorCheckbox');
-            const svg = document.getElementById('coloredSvg');
 
-            // Add event listener to the checkbox
-            checkbox.addEventListener('change', function () {
-                // If the checkbox is checked, change the SVG color; otherwise, reset it
-                if (checkbox.checked) {
-                    svg.style.fill = 'blue'; // Change the color to blue, replace with your desired color
-                } else {
-                    svg.style.fill = 'red'; // Reset the color, replace with the original color
-                }
+    <!-- HTML -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="imagePreview1"></div>
+            <div class="swiper-slide" id="imagePreview2"></div>
+            <div class="swiper-slide" id="imagePreview3"></div>
+            <div class="swiper-slide" id="imagePreview4"></div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Handle photo upload
+            $("#photoInput").change(function () {
+                // Implement photo upload logic here
+            });
+
+            // Handle swipe gestures
+            var swipeContainer = $("#swipeContainer").hammer();
+            swipeContainer.on("swiperight", function (event) {
+                // Implement logic for right swipe (accept match)
+            });
+
+            swipeContainer.on("swipeleft", function (event) {
+                // Implement logic for left swipe (reject match)
+            });
+
+            // Handle gender-based navigation
+            $("#genderSelector").change(function () {
+                var selectedGender = $(this).val();
+                // Implement logic to display matches based on selected gender
             });
         });
-
     </script>
+    <!-- Add this at the end of the body section of your HTML file, after your existing script tags -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If you need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+
+
+
 </body>
 
 </html>
