@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="assets/js/styled.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uplaod photo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inria+Serif:wght@300;400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Zen+Kaku+Gothic+Antique:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .uploadPic {
+            cursor: pointer;
+        }
+
+        .uplaodedPics span {
+            color: #000;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 40px;
+            border: 1px solid #1A1A1A;
+            padding: 6px 13px;
+        }
+
+        .uplaodedPics h1 {
+            color: #000;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+        }
+
+        .uplaodedPics .forboreder {
+            border-radius: 60%;
+        }
+
+        .bottomUpload {
+            border-radius: 6px;
+            border: 1px dashed #000;
+            background: #D9D9D9;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .bottomUpload h2 {
+            border-bottom: 1px dashed #000;
+        }
+
+        #imagePreview1,
+        #imagePreview2,
+        #imagePreview3,
+        #imagePreview4 {
+            /* background-size: 100% 100%; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- mobile Navigation starts -->
+
+    <div class="mobile_headr" id="mobile_headr">
+        <span id="clseBtn" class="clseBtn">
+            <i style="color: aliceblue;" class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="moboNav flex flex-col justify-between items-center h-[60%] pt-[45px]">
+            <ul class="items flex flex-col justify-ceenter items-start">
+                <li class="linkList"><a href="index.html" class="links">home</a></li>
+                <li class="linkList"><a href="Merchandise.html" class="links">Merchandise</a></li>
+                <li class="linkList"><a href="choosePlan.html" class="links">Choose a plan</a></li>
+                <li class="linkList"><a href="about.html" class="links">About Us</a></li>
+                <li class="linkList"><a href="AdvertiseYourBusiness.html" class="links">Schedule a business
+                        date</a>
+                <li class="linkList"><a href="FYBDhere.html" class="links">Find YBD Here</a></li>
+            </ul>
+            <div class="flex justiy-center items-center gap-[30px] md:text-[#fff] text-blck">
+                <ul class="flex justify-center items-center gap-[30px]">
+                    <li><a href="signIn.html"
+                            class="md:hover:border-white m-w-[810px]:border-black hover:border-black border-[2px] rounded-[30px] px-4 py-1 border-transparent transition-all">login</a>
+                    </li>
+                    <li><a href="singup.html"
+                            class=" rounded-[30px]  px-4 py-1 border-[2px] md:border-white border-black">sign
+                            up</a>
+                    </li>
+                </ul>
+                <div class="">
+                    <select id="countries" class=" bg-[transparent] outline-none ">
+                        <option class="text-[#000]" value="EN" selected>EN</option>
+                        <option value="GR" class="text-[#000]">GR</option>
+                        <option value="EN" class="text-[#000]">EN</option>
+                        <option value="EN" class="text-[#000]">EN</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile Navigation Ends -->
+
+    <div class="header_banner">
+        <header class="header_main">
+            <nav class="AdYrBu flex justify-between items-center flex-row">
+
+
+                <div class="header_logo">
+                    <a href="#">
+                        <img src="assets/images/LOGO.png" alt="">
+                    </a>
+                </div>
+                <!--  -->
+                <div class="right_header flex flex-1 justify-center items-center gap-2">
+                    <div class="navigation">
+                        <ul class="items flex justify-ceenter items-center gap-[15px]">
+                            <li class="linkList"><a href="index.html" class="links">home</a></li>
+                            <li class="linkList"><a href="Merchandise.html" class="links">Merchandise</a></li>
+                            <li class="linkList"><a href="choosePlan.html" class="links">Choose a plan</a></li>
+                            <li class="linkList"><a href="about.html" class="links">About Us</a></li>
+                            <li class="linkList"><a href="AdvertiseYourBusiness.html" class="links">Schedule a business
+                                    date</a>
+                            <li class="linkList"><a href="FYBDhere.html" class="links">Find YBD Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_icon">
+                    <span class="cursor-pointer" id="nav_icon"><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <!--  -->
+
+    <div class="uplaodedPics max-w-[1280px] w-full px-[14px] m-[auto] md:pt-[45px] pt-[20px]">
+        <div>
+            <h1 class="md:text-[40px] sm:text-[36px] text-[24px]">UPLOAD YOUR PHOTOS</h1>
+            <div class="flex items-center gap-[10px] md:pt-[30px] pt-[20px]">
+                <img src="assets/images/Image.png" class="w-[100px] h-[100px] forboreder" id="blah" alt="Img" />
+                <div>
+                    <label for="inputFile">
+                        <span>upload</span>
+                        <input type="file" id="inputFile" class="hidden" onchange="readUrl(this)">
+                    </label>
+                </div>
+                <button type="button" onclick="removeImg()" class="flex items-center gap-[10px]"><img
+                        src="assets/images/remove.png" alt=""> Close</button>
+            </div>
+            <div class="flex justify-between items-center md:pt-[45px] pt-[20px]">
+                <label for="uploadFile1" class="bottomUpload" id="imagePreview1">
+                    <h2 id="uplaodTitle1">uplaod</h2>
+                    <input id="uploadFile1" type="file" name="image" class="img hidden"
+                        accept="image/gif, image/jpeg, image/png" />
+                </label>
+                <label for="uploadFile2" class="bottomUpload" id="imagePreview2">
+                    <h2 id="uplaodTitle2">uplaod</h2>
+                    <input id="uploadFile2" type="file" name="image" class="img hidden"
+                        accept="image/gif, image/jpeg, image/png" />
+                </label>
+                <label for="uploadFile3" class="bottomUpload" id="imagePreview3">
+                    <h2 id="uplaodTitle3">uplaod</h2>
+                    <input id="uploadFile3" type="file" name="image" class="img hidden"
+                        accept="image/gif, image/jpeg, image/png" />
+                </label>
+                <label for="uploadFile4" class="bottomUpload" id="imagePreview4">
+                    <h2 id="uplaodTitle4">uplaod</h2>
+                    <input id="uploadFile4" type="file" name="image" class="img hidden"
+                        accept="image/gif, image/jpeg, image/png" />
+                </label>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        var a = document.getElementById("blah");
+        function readUrl(input) {
+            if (input.files) {
+                var reader = new FileReader();
+                reader.readAsDataURL(input.files[0]);
+                reader.onload = (e) => {
+                    a.src = e.target.result;
+                }
+            }
+        }
+
+        var inputFile = document.getElementById("inputFile");
+        removeImg = () => {
+            a.src = "assets/images/Image.png";
+            inputFile.value = "";
+        }
+
+        // 
+        $(function () {
+            function handleFileUpload(inputId, previewId, titleId) {
+                $("#" + inputId).on("change", function () {
+                    var files = !!this.files ? this.files : [];
+                    if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+                    if (/^image/.test(files[0].type)) { // only image file
+                        var reader = new FileReader(); // instance of the FileReader
+                        reader.readAsDataURL(files[0]); // read the local file
+
+                        reader.onloadend = function () { // set image data as background of div
+                            $("#" + previewId).css("background-image", "url(" + this.result + ")");
+                            if (files.length !== 0) {
+                                $("#" + "uplaodTitle1" || "#" + "uplaodTitle2" || "#" + "uplaodTitle3" || "#" + "uplaodTitle4").css({
+                                    "display": "none",
+                                });
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Example usage:
+            handleFileUpload("uploadFile1", "imagePreview1", "uplaodTitle1");
+            handleFileUpload("uploadFile2", "imagePreview2", "uplaodTitle2");
+            handleFileUpload("uploadFile3", "imagePreview3", "uplaodTitle3");
+            handleFileUpload("uploadFile4", "imagePreview4", "uplaodTitle4");
+            // Add more as needed...
+        });
+
+
+    </script>
+</body>
+
+</html>

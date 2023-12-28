@@ -45,14 +45,18 @@
             $('#' + FORM.opts['container'] + ' .previous').click(FORM.prev);
             $('#' + FORM.opts['container'] + ' .close').click(FORM.close);
             $('#' + FORM.opts['container']).show();
-            // $('body').css({ 'overflow': 'hidden' });
+            $('body').css({ 'overflow': 'auto' });
         },
         _next: function () {
             FORM.next_fs = FORM.current_fs.next();
 
             //activate next step on progressbar using the index of next_fs
-            $("#multistepform-progressbar li").eq($(".form").index(FORM.next_fs)).addClass("active");
+            // $("#multistepform-progressbar li").eq($(".form").index(FORM.next_fs)).addClass("active");
+            // Remove "active" class from current step in progressbar
+            $("#multistepform-progressbar li.active").removeClass("active");
 
+            // Activate next step on progressbar using the index of next_fs
+            $("#multistepform-progressbar li").eq($(".form").index(FORM.next_fs)).addClass("active");
             //show the next fieldset
             FORM.next_fs.show();
             //hide the current fieldset with style
@@ -70,9 +74,32 @@
                 },
                 duration: FORM.opts['duration'],
                 complete: function () {
-                    if (!FORM.next_fs[0]) {
-                        FORM._close();
-                        window.location.href = '../../index.html';
+                    var mynewText = $('#scheduleID')
+                    // var Infoleftelt = $('.Infoleft ')
+                    if (!FORM.next_fs[0] || FORM.next_fs[2]) {
+                        // FORM._close();
+                        // window.location.href = '../../index.html';
+                        // console.log("hello text")
+                        mynewText.html("<h1>Thank you!</h1>");
+                        $(".Infoleft").css({
+                            "display": "none",
+                        });
+                        $("#multistepform-progressbar").css({
+                            "display": "none",
+                        });
+                        $("#multistepform-container").css({
+                            "padding": "20px",
+                        });
+                        $(".conactInfo1 .infoInner .infoRight .inner").css({
+                            "flex-direction": "column-reverse",
+                        });
+                        $("#rightbuton").css({
+                            "display": "flex",
+                        });
+                        $(".conactInfo1 .infoInner").css({
+                            "backgroundColor": "transparent",
+                        });
+
                     }
                     FORM.current_fs.hide();
                     FORM.current_fs = FORM.next_fs;
@@ -102,7 +129,7 @@
         },
         _close: function () {
             $('#' + FORM.opts['container']).hide();
-            $('body').css({ 'overflow': 'auto' });
+            $('body').css({ 'overflow': 'hidden' });
         },
         close: function () {
             FORM.opts['onClose']();
@@ -113,7 +140,7 @@
             FORM.animating = true;
 
             var form = $(FORM.current_fs).children('form');
-            if (form.length) {
+            if (form.length || form.length === 2) {
                 var form_data = $(form[0]).serialize();
                 $.ajax({
                     crossDomain: true,

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="assets/js/styled.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Varify</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inria+Serif:wght@300;400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Zen+Kaku+Gothic+Antique:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .input-group {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .password-input {
+            padding-right: 30px;
+        }
+
+        .toggle-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    </style>
+    <title>Show/Hide Email and Password</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            padding: 0 14px;
+            min-height: 100vh;
+            border-radius: 10px;
+            background: #ECECEC;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .containers {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            margin: auto;
+
+            text-align: center;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .code-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 28px 0;
+        }
+
+        .code {
+            caret-color: transparent;
+            background-color: rgba(255, 255, 255, 01);
+            border-radius: 10px;
+            border: 1px solid #000;
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif;
+            width: 45px;
+            height: 46px;
+            margin: 7px 4px;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        @media (max-width: 600px) {
+            .code-container {
+                flex-wrap: wrap;
+            }
+
+            .code {
+                font-size: 24px;
+                height: 50px;
+                max-width: 50px;
+                font-size: bold;
+            }
+        }
+
+        .code::-webkit-outer-spin-button,
+        .code::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+        .code:valid {
+            border-color: #800020;
+            box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+        }
+
+        .btn {
+            font-family: 'Poppins', sans-serif;
+            min-width: 170px;
+            display: inline-block;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            cursor: pointer;
+            border: 1px solid transparent;
+            margin: 0px 0px 11px 0px;
+            padding: 11px;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.7;
+        }
+
+        .btn-primary {
+            color: #fff;
+            border-radius: 6px;
+            background: #2F8AD0 !important;
+        }
+
+        .info {
+            border-top: 1px solid #ccc;
+            padding-top: 11px;
+            margin-top: 0px;
+            display: block;
+        }
+
+        @media only screen and (max-width:372px) {
+            .code {
+                width: 32px;
+                height: 32px;
+            }
+
+            .btn-primary {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .code-container {
+                margin: 18px 0;
+            }
+        }
+
+        .addressLogo {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="addressLogo">
+        <a href="#">
+            <img src="assets/images/footerLogo.png" alt="">
+        </a>
+    </div>
+    <div class="containers">
+        <div class="flex justify-center items-center">
+            <img src="assets/images/email.png" alt="">
+        </div>
+        <h2>Verify your email address</h2>
+        <p class="mt-[10px]">
+            Please enter the 5 digit code sent to <br> your email and phone number
+        </p>
+
+        <div class="code-container">
+            <div class="flex flex-col">
+                <div>
+
+                    <input type="number" class="code" min="0" max="9" required>
+                    <input type="number" class="code" min="0" max="9" required>
+                    <input type="number" class="code" min="0" max="9" required>
+                    <input type="number" class="code" min="0" max="9" required>
+                    <input type="number" class="code" min="0" max="9" required>
+                </div>
+                <div>
+                    <input type="number" class="code" min="0" max="9" required>
+                    <input type="number" class="code" min="0" max="9" required>
+                    <input type="number" class="code" min="0" max="9" required>
+                    <input type="number" class="code" min="0" max="9" required>
+                    <input type="number" class="code" min="0" max="9" required>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button type="button" class="btn btn-primary">Verify</button>
+        </div>
+
+        <small class="info">
+            Don’t receive code? Resend code <strong> Resend code</strong>
+        </small>
+
+    </div>
+
+    <script>
+        const codes = document.querySelectorAll('.code')
+
+        codes[0].focus()
+
+        codes.forEach((code, idx) => {
+            code.addEventListener('keydown', (e) => {
+                if (e.key >= 0 && e.key <= 9) {
+                    codes[idx].value = ''
+                    setTimeout(() => codes[idx + 1].focus(), 10)
+                } else if (e.key === 'Backspace') {
+                    setTimeout(() => codes[idx - 1].focus(), 10)
+                }
+            })
+        })
+    </script>
+
+
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

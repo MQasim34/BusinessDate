@@ -4,35 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Textarea with 10 Lines Between Rows</title>
-    <style>
-        /* Apply a background image to simulate lines between rows */
-        textarea {
-            background-image: -webkit-linear-gradient(left, white 10px, transparent 10px), -webkit-linear-gradient(right, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-            background-image: -moz-linear-gradient(left, white 10px, transparent 10px), -moz-linear-gradient(right, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-            background-image: -ms-linear-gradient(left, white 10px, transparent 10px), -ms-linear-gradient(right, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-            background-image: -o-linear-gradient(left, white 10px, transparent 10px), -o-linear-gradient(right, white 10px, transparent 10px), -o-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-            background-image: linear-gradient(left, white 10px, transparent 10px), linear-gradient(right, white 10px, transparent 10px), linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
-            background-size: 100% 100%, 100% 100%, 100% 31px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-            line-height: 31px;
-            font-family: Arial, Helvetica, Sans-serif;
-            padding: 8px;
-            width: 300px;
-            height: 500px;
-        }
-
-        /* Optional: Add some padding to the textarea for better visual appearance */
-        body {
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>SVG Color Change</title>
 </head>
 
 <body>
-    <textarea rows="20" placeholder="Type something..."></textarea>
+    <input type="checkbox" id="colorCheckbox"> Change Color
+    <svg id="coloredSvg" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+        <!-- Your SVG content goes here -->
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the checkbox and SVG element
+            const checkbox = document.getElementById('colorCheckbox');
+            const svg = document.getElementById('coloredSvg');
+
+            // Add event listener to the checkbox
+            checkbox.addEventListener('change', function () {
+                // If the checkbox is checked, change the SVG color; otherwise, reset it
+                if (checkbox.checked) {
+                    svg.style.fill = 'blue'; // Change the color to blue, replace with your desired color
+                } else {
+                    svg.style.fill = 'red'; // Reset the color, replace with the original color
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>

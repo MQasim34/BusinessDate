@@ -145,7 +145,7 @@
                                     </div>
                                 </div>
                                 <div class="leftbottom pb-[20px]">
-                                    <a href="#" type="button" class="flex next jusitfy-between items-center gap-[10px]"
+                                    <a type="button" class="flex next jusitfy-between items-center gap-[10px]"
                                         name="next" value="Next">
                                         <span>next step</span>
                                         <span><img src="assets/images/Arrow3.png" class="w-[20px]" alt=""></span>
@@ -162,13 +162,12 @@
                             <div id="date_picker"></div>
                         </div>
                         <div class=" contectInfo3main flex gap-[10px] pb-[10px]">
-                            <a href="#" name="previous" class="previous flex items-center gap-[30px]" value="Previous">
+                            <a name="previous" class="previous flex items-center gap-[30px]" value="Previous">
                                 <span><img src="assets/images/Arrow4.png" class="w-[20px]" alt=""></span>
                                 <span>previous</span>
                             </a>
-                            <a href="#" name="next" class="flex next justify-between items-center gap-[50px]"
-                                value="Next">
-                                <span>next </span>
+                            <a name="next" class="flex next justify-between items-center gap-[50px]" value="Next">
+                                <span>next step </span>
                                 <span><img src="assets/images/Arrow3.png" class="w-[20px]" alt=""></span>
                             </a>
                         </div>
@@ -186,8 +185,8 @@
                             <textarea type="email" name="" placeholder="Notes"></textarea>
                         </div>
                         <div class="pb-[10px]">
-                            <a href="#" type="button" name="next"
-                                class="flex next justify-between items-center gap-[20px]" value="Next">
+                            <a type="button" name="next" class="flex next justify-between items-center gap-[20px]"
+                                value="Next">
                                 <span>finish </span>
                                 <span><img src="assets/images/Arrow3.png" class="w-[20px]" alt=""></span>
                             </a>
@@ -195,30 +194,46 @@
                     </form>
                 </div>
             </div>
-            <div class="infoRight flex flex-col justify-between items-center max-w-[334px] w-full bg-white">
-                <div class="Righttop flex flex-row gap-[10px]">
-                    <ul id="multistepform-progressbar">
-                        <li class="active"></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div class="Rightmdle">
-                    <div class="flex flex-col items-center gap-[20px]">
-                        <img src="assets/images/confirm.png" class="w-[100px]" alt="">
-                        <h1 class="md:text-[26px] sm:text-[20px] text-18px">Schedule an appointment</h1>
-                        <p class="md:text-[14px] sm:text-[13px] text-[12px] font-[400]">It is a long established fact
-                            that a reader
-                            will be distracted by the readable
-                            content of a
-                            page when looking at its
-                            layout.</p>
+            <div class="infoRight max-w-[334px] w-full bg-white flex flex-col justify-between">
+                <div class="inner flex flex-col justify-between items-center h-[100%]">
+                    <div class="Righttop flex flex-row gap-[10px]">
+                        <ul id="multistepform-progressbar">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="Rightmdle">
+                        <div class="flex flex-col items-center gap-[20px]">
+                            <img src="assets/images/confirm.png" class="w-[100px]" alt="">
+                            <h1 class="md:text-[26px] sm:text-[20px] text-18px" id="scheduleID">Schedule an appointment
+                            </h1>
+                            <p class="md:text-[14px] sm:text-[13px] text-[12px] font-[400]">It is a long established
+                                fact
+                                that a reader
+                                will be distracted by the readable
+                                content of a
+                                page when looking at its
+                                layout.</p>
+                        </div>
+                    </div>
+                    <div class="Rightbottom flex flex-col gap-[0px] items-center">
+                        <span>561.450.6721</span>
+                        <span> <a href="LISAWOOMERS@GMAIL.COM">LISAWOOMERS@GMAIL.COM</a></span>
                     </div>
                 </div>
-                <div class="Rightbottom flex flex-col gap-[0px] items-center">
-                    <span>561.450.6721</span>
-                    <span> <a href="LISAWOOMERS@GMAIL.COM">LISAWOOMERS@GMAIL.COM</a></span>
+                <div class="rightbuton flex next justify-center items-center p-[10px]" id="rightbuton">
+                    <a type="button" id="rightbutonInner" class="flex items-center  gap-[20px]">
+                        <span>next step </span>
+                        <span><img src="assets/images/Arrow3.png" class="w-[20px]" alt=""></span>
+                    </a>
                 </div>
+            </div>
+
+            <!-- appointment -->
+            <div class="appointment" id="appointment">
+                <h1>Appointment</h1>
+                <div class="calender"></div>
             </div>
         </div>
     </div>
@@ -241,6 +256,21 @@
                 // "todayButton": true,
             });
         });
+    </script>
+
+    <script>
+        $(function () {
+            $('#rightbutonInner').click(function () {
+                $('.infoRight').css({
+                    "display": "none",
+                    "transition": "all .4s",
+                });
+                $('#appointment').css({
+                    "display": "block",
+                    "transition": "all .4s",
+                })
+            })
+        })
     </script>
 </body>
 
