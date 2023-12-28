@@ -19,6 +19,11 @@
             cursor: pointer;
         }
 
+        .uplaodedPics {
+            min-height: 100vh;
+            padding-bottom: 30px;
+        }
+
         .uplaodedPics span {
             color: #000;
             text-align: center;
@@ -45,7 +50,7 @@
             border-radius: 6px;
             border: 1px dashed #000;
             background: #D9D9D9;
-            width: 250px;
+            width: 240px;
             height: 250px;
             display: flex;
             justify-content: center;
@@ -65,6 +70,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+        }
+
+        .forremovingbdr {
+            border: none !important;
         }
     </style>
 </head>
@@ -158,7 +167,7 @@
                 <button type="button" onclick="removeImg()" class="flex items-center gap-[10px]"><img
                         src="assets/images/remove.png" alt=""> Close</button>
             </div>
-            <div class="flex justify-between items-center md:pt-[45px] pt-[20px]">
+            <div class="flex flex-wrap justify-center items-center md:pt-[45px] pt-[20px] gap-[10px]">
                 <label for="uploadFile1" class="bottomUpload" id="imagePreview1">
                     <h2 id="uplaodTitle1">uplaod</h2>
                     <input id="uploadFile1" type="file" name="image" class="img hidden"
@@ -179,10 +188,103 @@
                     <input id="uploadFile4" type="file" name="image" class="img hidden"
                         accept="image/gif, image/jpeg, image/png" />
                 </label>
+                <label for="uploadFile4" class="bottomUpload" id="imagePreview4">
+                    <h2 id="uplaodTitle4">uplaod</h2>
+                    <input id="uploadFile4" type="file" name="image" class="img hidden"
+                        accept="image/gif, image/jpeg, image/png" />
+                </label>
+                <label for="uploadFile4" class="bottomUpload" id="imagePreview4">
+                    <h2 id="uplaodTitle4">uplaod</h2>
+                    <input id="uploadFile4" type="file" name="image" class="img hidden"
+                        accept="image/gif, image/jpeg, image/png" />
+                </label>
+                <label for="uploadFile4" class="bottomUpload" id="imagePreview4">
+                    <h2 id="uplaodTitle4">uplaod</h2>
+                    <input id="uploadFile4" type="file" name="image" class="img hidden"
+                        accept="image/gif, image/jpeg, image/png" />
+                </label>
+                <label for="uploadFile4" class="bottomUpload" id="imagePreview4">
+                    <h2 id="uplaodTitle4">uplaod</h2>
+                    <input id="uploadFile4" type="file" name="image" class="img hidden"
+                        accept="image/gif, image/jpeg, image/png" />
+                </label>
+                <label for="uploadFile4" class="bottomUpload" id="imagePreview4">
+                    <h2 id="uplaodTitle4">uplaod</h2>
+                    <input id="uploadFile4" type="file" name="image" class="img hidden"
+                        accept="image/gif, image/jpeg, image/png" />
+                </label>
 
             </div>
         </div>
+        <a href="choosePlan.html" class="py-[45px] block">
+            <button class="button  float-right" id="next">
+                <div class="flex gap-2 items-center">
+                    <span class="forremovingbdr">Next</span>
+                    <img src="assets/images/ADVERTISINGYOURBUSINESS/Vector.png" class="w-[7px]" alt="">
+                </div>
+            </button>
+        </a>
     </div>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="fotoer_main">
+            <div
+                class="footerInner flex md:flex-row flex-col md:justify-between justify-center md:items-start md:text-start text-center items-center px-[13px] md:gap-[10px] gap-[30px]">
+                <div class="left-footer">
+                    <ul>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="footerPages/safetyTips.html">Safety Tips</a></li>
+                        <li><a href="footerPages/contact.html">Contact us</a></li>
+                        <li><a href="footerPages/creer.html">Careers</a></li>
+                        <li><a href="footerPages/quickdos.html">Dos and Don'ts</a></li>
+                    </ul>
+                </div>
+                <div class="mdle_footer md:mr-[90px] mr-0">
+                    <a href="" class="text-center flex items-center justify-center flex-col gap-[10px]">
+                        <img src="assets/images/footerLogo.png" width="84px" alt="">
+                        <h1 class="text-white uppercase text-[17px]">your business date</h1>
+                    </a>
+                </div>
+                <div class="right_footer">
+                    <ul>
+                        <li><a href="AdvertiseYourBusiness.html">Advertise your business</a></li>
+                        <li><a href="footerPages/testimonial.html">Testimonials</a></li>
+                        <li><a href="footerPages/faq.html">FAQ</a></li>
+                        <li><a href="schedule.html">Schedule a YBD</a></li>
+                        <li><a href="cancelSubsrciption.html">Cancel your subscription</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom pt-[40px] pb-[10px]">
+            <div>
+                <ul class="flex flex-wrap justify-center items-center gap-[30px]">
+                    <li>
+                        <a href=""><img src="assets/images/facebook.png" target="_blank" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/home/@Rubyiris527198" target="_blank"><img
+                                src="assets/images/Twitter.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                            target="_blank"><img src="assets/images/linkedin.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/Rubyirs387" target="_blank"><img
+                                src="assets/images/insta.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="assets/images/youtube.png" target="_blank" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="assets/js/custom.js"></script>

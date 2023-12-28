@@ -3945,3 +3945,35 @@ input {
         align-items: start;
     }
 }
+
+
+/* submitpayform */
+/* .submitpayform {
+    max-width: 1000px;
+    width: 100%;
+    margin: 90px auto;
+    border-radius: 10px;
+    background: #E9E9E9;
+    padding: 90px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.submitpayform .pmnttop .topcheckbox input {
+    display: none;
+}
+
+.submitpayform .pmnttop .topcheckbox label {
+    cursor: pointer;
+}
+
+.submitpayform .pmnttop .topcheckbox input:checked+label svg path#bitpath {
+    fill: #0570DE;
+    /* stroke: red; */
+}
+
+.submitpayform .pmnttop .topcheckbox input:checked+label svg rect#bitpath1 {
+    stroke: #0570DE;
+
+}

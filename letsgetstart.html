@@ -14,6 +14,16 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/multisteps.css">
+    <style>
+        @media only screen and (max-width:640px) {
+            .formedcol {
+                display: flex;
+                flex-direction: column;
+                align-items: start !important;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -256,7 +266,7 @@
                     <div class="BoxOuters md:py-[90px] sm:py-[45px] py-[20px] w-full">
                         <div class="BoxInerers Traits">
                             <!-- body types -->
-                            <div class="flex items-center">
+                            <div class="formedcol lex items-center">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Body types:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <label for="checbox1" class="flex gap-[5px]">
@@ -366,16 +376,19 @@
                             </div>
 
                             <!-- weight -->
-                            <div class="flex items-center">
-                                <div class="weight flex items-center justify-center mr-[16px] gap-[10px]">
-                                    <h1 class=" md:text-[24px] text-[18px]">Weight:</h1>
-                                    <input type="number" name="" id=""
-                                        class="w-[50px] h-[21px] border border-black rounded p-[5px] text-[12px]">
-                                </div>
-                                <div class="weight flex items-center justify-center mr-[16px] gap-[10px]">
-                                    <h1 class=" md:text-[24px] text-[18px]">Height:</h1>
-                                    <input type="number" name="" id=""
-                                        class="w-[50px] h-[21px] border border-black rounded p-[5px] text-[12px]">
+                            <div class="formedcol flex items-center">
+                                <div class="flex items-center flex-wrap gap-[10px]">
+
+                                    <div class="weight flex items-center justify-center mr-[16px] gap-[10px]">
+                                        <h1 class=" md:text-[24px] text-[18px]">Weight:</h1>
+                                        <input type="number" name="" id=""
+                                            class="w-[50px] h-[21px] border border-black rounded p-[5px] text-[12px]">
+                                    </div>
+                                    <div class="weight flex items-center justify-center mr-[16px] gap-[10px]">
+                                        <h1 class=" md:text-[24px] text-[18px]">Height:</h1>
+                                        <input type="number" name="" id=""
+                                            class="w-[50px] h-[21px] border border-black rounded p-[5px] text-[12px]">
+                                    </div>
                                 </div>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <label for="weight1" class="flex gap-[5px]">
@@ -485,7 +498,7 @@
                             </div>
 
                             <!-- eyecolor -->
-                            <div class="flex items-center">
+                            <div class="formedcol flex items-center">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Eye color:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <label for="eyecolor1" class="flex gap-[5px]">
@@ -565,7 +578,7 @@
                             </div>
 
                             <!-- Hair color: -->
-                            <div class="flex items-center">
+                            <div class="formedcol flex items-center">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Hair color:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <label for="haircolor1" class="flex gap-[5px]">
@@ -630,7 +643,7 @@
                             </div>
 
                             <!-- Marital status:  -->
-                            <div class="flex items-center">
+                            <div class="formedcol flex items-center">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Marital status:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <label for="mstatus1" class="flex gap-[5px]">
@@ -680,7 +693,7 @@
                             </div>
 
                             <!-- Children: -->
-                            <div class="flex items-center">
+                            <div class="formedcol flex items-center">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Children:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <label for="children1" class="flex gap-[5px]">
@@ -745,7 +758,7 @@
                             </div>
 
                             <!-- Socials: -->
-                            <div class="flex items-center">
+                            <div class="formedcol flex items-center">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Socials:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <label for="social1" class="flex gap-[5px]">
@@ -795,7 +808,7 @@
                             </div>
 
                             <!-- Socials: -->
-                            <div class="flex items-center">
+                            <div class="formedcol flex items-center">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Socials:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <label for="social4" class="flex gap-[5px]">
@@ -845,13 +858,13 @@
                             </div>
 
                             <!-- Religion: -->
-                            <div class="religion flex items-center">
+                            <div class="formedcol religion flex items-center">
                                 <h1 class="md:text-[24px] text-[18px] mr-[16px]">Religion:</h1>
                                 <input type="text" placeholder="Islam">
                             </div>
 
                             <!-- Education: -->
-                            <div class="flex items-center">
+                            <div class="formedcol flex items-center">
                                 <h1 class="md:text-[24px] text-[18px] mr-[16px]">Education:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <!-- 1 -->
@@ -977,7 +990,7 @@
                             </div>
 
                             <!-- Zodiac Sign: -->
-                            <div class="flex items-center">
+                            <div class="formedcol flex items-center">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Zodiac Sign:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <!-- 1 -->
@@ -1162,7 +1175,7 @@
                                 </div>
                             </div>
                             <!-- gender -->
-                            <div class="religion flex items-center">
+                            <div class="formedcol religion flex items-center">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">My Gender:</h1>
                                 <div class="checkBoxesOuter flex flex-wrap gap-[16px]">
                                     <input type="text" placeholder="other" style="display: block;">
@@ -1199,7 +1212,7 @@
                             </div>
 
                             <!-- location -->
-                            <div class="religion location flex">
+                            <div class="formedcol religion location flex">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Location: <span>(optional)</span></h1>
                                 <div class="flex gap-[10px]">
                                     <input type="text" name="" id="" placeholder="Village">
@@ -1211,7 +1224,7 @@
                             </div>
 
                             <!-- Race -->
-                            <div class="religion location flex">
+                            <div class="formedcol religion location flex">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Race: <span>(optional)</span></h1>
                                 <div class="flex gap-[10px]">
                                     <input type="text" name="" id="" placeholder="other">
@@ -1219,7 +1232,7 @@
                             </div>
 
                             <!-- descrition -->
-                            <div class="religion discription flex">
+                            <div class="formedcol religion discription flex">
                                 <h1 class=" md:text-[24px] text-[18px] mr-[16px]">Brief description:</h1>
                                 <div class="flex flex-col gap-[10px]">
                                     <p>of yourself and what you’re looking for, what kind of business do you do and what
@@ -1500,7 +1513,9 @@
                 <img src="assets/images/ADVERTISINGYOURBUSINESS/Vector.png" class="w-[7px]" alt="">
             </div>
         </button>
-        <button class="button conoformbtn" id="submit">Conform</button>
+        <a href="addressVerify.html">
+            <button class="button conoformbtn" id="submit">Conform</button>
+        </a>
 
     </div>
 
