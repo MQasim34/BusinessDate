@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="assets/js/styled.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="chat_Box/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Inria+Serif:wght@300;400;700&family=Inter:wght@200;300;400;500;600;700;800;900&family=Lato:wght@300;400;700;900&family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Zen+Kaku+Gothic+Antique:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- mobile Navigation starts -->
+
+    <div class="mobile_headr" id="mobile_headr">
+        <span id="clseBtn" class="clseBtn">
+            <i style="color: aliceblue;" class="fa-solid fa-xmark"></i>
+        </span>
+        <div class="moboNav flex flex-col justify-between items-center h-[60%] pt-[45px]">
+            <ul class="items flex flex-col justify-ceenter items-start">
+                <li class="linkList"><a href="index.html" class="links">home</a></li>
+                <li class="linkList"><a href="Merchandise.html" class="links">Merchandise</a></li>
+                <li class="linkList"><a href="choosePlan.html" class="links">Choose a plan</a></li>
+                <li class="linkList"><a href="about.html" class="links">About Us</a></li>
+                <li class="linkList"><a href="AdvertiseYourBusiness.html" class="links">Schedule a business
+                        date</a>
+                <li class="linkList"><a href="FYBDhere.html" class="links">Find YBD Here</a></li>
+            </ul>
+            <div class="flex justiy-center items-center gap-[30px] md:text-[#fff] text-blck">
+                <ul class="flex justify-center items-center gap-[30px]">
+                    <li><a href="signIn.html"
+                            class="md:hover:border-white m-w-[810px]:border-black hover:border-black border-[2px] rounded-[30px] px-4 py-1 border-transparent transition-all">login</a>
+                    </li>
+                    <li><a href="singup.html"
+                            class=" rounded-[30px]  px-4 py-1 border-[2px] md:border-white border-black">sign
+                            up</a>
+                    </li>
+                </ul>
+                <div class="">
+                    <select id="countries" class=" bg-[transparent] outline-none ">
+                        <option class="text-[#000]" value="EN" selected>EN</option>
+                        <option value="GR" class="text-[#000]">GR</option>
+                        <option value="EN" class="text-[#000]">EN</option>
+                        <option value="EN" class="text-[#000]">EN</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- mobile Navigation Ends -->
+
+    <div class="header_banner">
+        <header class="header_main">
+            <nav class="AdYrBu flex justify-between items-center flex-row">
+
+
+                <div class="header_logo">
+                    <a href="#">
+                        <img src="assets/images/LOGO.png" alt="">
+                    </a>
+                </div>
+                <!--  -->
+                <div class="right_header flex flex-1 justify-center items-center gap-2">
+                    <div class="navigation">
+                        <ul class="items flex justify-ceenter items-center gap-[15px]">
+                            <li class="linkList"><a href="index.html" class="links">home</a></li>
+                            <li class="linkList"><a href="Merchandise.html" class="links">Merchandise</a></li>
+                            <li class="linkList"><a href="choosePlan.html" class="links">Choose a plan</a></li>
+                            <li class="linkList"><a href="about.html" class="links">About Us</a></li>
+                            <li class="linkList"><a href="AdvertiseYourBusiness.html" class="links">Schedule a business
+                                    date</a>
+                            <li class="linkList"><a href="FYBDhere.html" class="links">Find YBD Here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_icon">
+                    <span class="cursor-pointer" id="nav_icon"><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="home-page__content messages-page">
+        <div class="container-fluid h-100">
+            <div class="row px-0 h-100">
+
+                <div class="col-12 col-md-4 col-lg-5 col-xl-4 px-0 messages-page__list-scroll">
+
+                    <div class="messages-page__header mb-0 px-4 pt-3 pb-3">
+                        <span class="messages-page__title">message</span>
+                    </div>
+
+                    <ul class="messages-page__list ">
+                        <li class="messaging-member messaging-member--new messaging-member--online">
+                            <div class="messaging-member__wrapper">
+                                <div class="messaging-member__avatar">
+                                    <img src="https://randomuser.me/api/portraits/thumb/men/74.jpg" alt="Bessie Cooper"
+                                        loading="lazy">
+                                </div>
+
+                                <span class="messaging-member__name">Arthur</span>
+                                <span class="messaging-member__message">Ok pas de soucis</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="chat col-12 col-md-8 col-lg-7 col-xl-8 px-0 pl-md-1 ">
+                    <div class="chat__container">
+                        <div class="chat__wrapper py-2 pt-mb-2 pb-md-3">
+                            <div class="chat__messaging messaging-member--online pb-2 pb-md-2 pl-2 pl-md-4 pr-2">
+                                <div class="chat__previous d-flex d-md-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon--previous"
+                                        viewBox="0 0 45.5 30.4">
+                                        <path
+                                            d="M43.5,13.1H7l9.7-9.6A2.1,2.1,0,1,0,13.8.6L.9,13.5h0L.3,14v.6c0,.1-.1.1-.1.2v.4a2,2,0,0,0,.6,1.5l.3.3L13.8,29.8a2.1,2.1,0,1,0,2.9-2.9L7,17.2H43.5a2,2,0,0,0,2-2A2.1,2.1,0,0,0,43.5,13.1Z"
+                                            fill="#f68b3c" />
+                                    </svg>
+                                </div>
+                                <div class="chat__infos pl-2 pl-md-0">
+                                    <div>
+                                        <h1 class="convervations">Conversation with</h1>
+                                    </div>
+                                    <div class="chat-member__wrapper" data-online="true">
+                                        <div class="flex justify-between items-center w-full">
+
+                                            <div class="flex gap-[5px] items-center">
+                                                <div class="chat-member__avatar">
+                                                    <img src="https://randomuser.me/api/portraits/thumb/women/56.jpg"
+                                                        alt="Jenny Smith" loading="lazy">
+                                                    <!-- <div class="user-status user-status--large"></div> -->
+                                                </div>
+                                                <div class="chat-member__details">
+                                                    <span class="chat-member__name">Hugo</span>
+                                                    <!-- <span class="chat-member__status">Online</span> -->
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a href="" class="chatButton">
+                                                    <button type="button">Schedule Your Business date</button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="chat__content pt-4 md:px-20 px-4">
+                                <ul class="chat__list-messages">
+                                    <li>
+                                        <div class="chat__time">Yesterday at 16:43</div>
+                                        <div class="chat__bubble chat__bubble--you">
+                                            Hey, I bought something yesterdat but haven't gotten any confirmation. Do
+                                            you
+                                            know I if the order went through?
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat__bubble chat__bubble--me">
+                                            Hi! I just checked, your order went through and is on it's way home. Enjoy
+                                            your
+                                            new computer! 😃
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat__bubble chat__bubble--you">
+                                            Ohh thanks ! I was really worried about it !
+                                        </div>
+                                        <div class="chat__bubble chat__bubble--you">
+                                            Can't wait for it to be delivered
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat__time">07:14</div>
+                                        <div class="chat__bubble chat__bubble--me">
+                                            Aenean iaculis massa non lorem dignissim volutpat. Praesent id faucibus
+                                            lorem, a
+                                            sagittis nunc. Duis facilisis lectus vel sapien ultricies, sed placerat
+                                            augue
+                                            elementum. In sagittis, justo nec sodales posuere, nunc est sagittis tellus,
+                                            eget scelerisque dolor risus vel augue
+                                        </div>
+                                        <div class="chat__bubble chat__bubble--me">
+                                            Is everything alright?
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="chat__bubble chat__bubble--you">
+                                            Vestibulum finibus pulvinar quam, at tempus lorem. Pellentesque justo
+                                            sapien,
+                                            pulvinar sed magna et, vulputate commodo nisl. Aenean pharetra ornare
+                                            turpis.
+                                            Pellentesque viverra blandit ullamcorper. Mauris tincidunt ac lacus vel
+                                            convallis. Vestibulum id nunc nec urna accumsan dapibus quis ullamcorper
+                                            massa.
+                                            Aliquam erat volutpat. Nam mollis mi et arcu dapibus condimentum.
+                                        </div>
+                                        <div class="chat__bubble chat__bubble--you">
+                                            Nulla facilisi. Duis laoreet dignissim lectus vel maximus
+                                        </div>
+                                        <div class="chat__bubble chat__bubble--you">
+                                            Curabitur volutpat, ipsum a condimentum hendrerit ! 😊
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat__time">09:26</div>
+                                        <div class="chat__bubble chat__bubble--me">
+                                            Perfect, thanks !
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chat__send-container md:px-20 px-4 pt-1 pt-md-3">
+                                <div class="custom-form__send-wrapper">
+                                    <input type="text" class="form-control custom-form" id="message"
+                                        placeholder="Votre message" autocomplete="off">
+                                    <div class="custom-form__send-img">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon--send-img"
+                                            viewBox="0 0 45.7 45.7">
+                                            <path
+                                                d="M6.6,45.7A6.7,6.7,0,0,1,0,39.1V6.6A6.7,6.7,0,0,1,6.6,0H39.1a6.7,6.7,0,0,1,6.6,6.6V39.1h0a6.7,6.7,0,0,1-6.6,6.6ZM39,4H6.6A2.6,2.6,0,0,0,4,6.6V39.1a2.6,2.6,0,0,0,2.6,2.6H39.1a2.6,2.6,0,0,0,2.6-2.6V6.6A2.7,2.7,0,0,0,39,4Zm4.7,35.1Zm-4.6-.4H6.6a2.1,2.1,0,0,1-1.8-1.1,2,2,0,0,1,.3-2.1l8.1-10.4a1.8,1.8,0,0,1,1.5-.8,2.4,2.4,0,0,1,1.6.7l4.2,5.1,6.6-8.5a1.8,1.8,0,0,1,1.6-.8,1.8,1.8,0,0,1,1.5.8L40.7,35.5a2,2,0,0,1,.1,2.1A1.8,1.8,0,0,1,39.1,38.7Zm-17.2-4H35.1l-6.5-8.6-6.5,8.4C22,34.6,22,34.7,21.9,34.7Zm-11.2,0H19l-4.2-5.1Z"
+                                                fill="#f68b3c" />
+                                        </svg>
+                                    </div>
+                                    <!-- <div class="custom-form__send-emoji">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon svg-icon--send-emoji"
+                                            viewBox="0 0 46.2 46.2">
+                                            <path
+                                                d="M23.1,0A23.1,23.1,0,1,0,46.2,23.1,23.1,23.1,0,0,0,23.1,0Zm0,41.6A18.5,18.5,0,1,1,41.6,23.1,18.5,18.5,0,0,1,23.1,41.6Zm8.1-20.8a3.5,3.5,0,0,0,3.5-3.5,3.5,3.5,0,0,0-7,0,3.5,3.5,0,0,0,3.5,3.5ZM15,20.8a3.5,3.5,0,0,0,3.5-3.5A3.5,3.5,0,0,0,15,13.9a3.4,3.4,0,0,0-3.4,3.4A3.5,3.5,0,0,0,15,20.8Zm8.1,15a12.6,12.6,0,0,0,10.5-5.5,1.7,1.7,0,0,0-1.3-2.6H14a1.7,1.7,0,0,0-1.4,2.6A12.9,12.9,0,0,0,23.1,35.8Z"
+                                                fill="#f68b3c" />
+                                        </svg>
+                                    </div> -->
+                                    <button type="submit" class="custom-form__send-submit">
+                                        send
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                                            viewBox="0 0 18 17" fill="none">
+                                            <path
+                                                d="M5.17013 3.69997L12.2177 1.34287C15.3804 0.28509 17.0987 2.01752 16.0527 5.19086L13.7036 12.2621C12.1264 17.018 9.53646 17.018 7.95928 12.2621L7.26198 10.1632L5.17013 9.46359C0.430268 7.88109 0.430268 5.2908 5.17013 3.69997Z"
+                                                fill="#00FFFF" stroke="#800020" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M7.41992 9.80517L10.3917 6.81506L7.41992 9.80517Z" fill="black" />
+                                            <path d="M7.41992 9.80517L10.3917 6.81506" stroke="#800020"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $chat = $(".chat");
+        $profile = $(".user-profile");
+
+        /* ===================================
+            Screen resize handler
+        ====================================== */
+        const smallDevice = window.matchMedia("(max-width: 767px)");
+        const largeScreen = window.matchMedia("(max-width: 1199px)");
+        smallDevice.addEventListener("change", handleDeviceChange);
+        largeScreen.addEventListener("change", handleLargeScreenChange);
+
+        handleDeviceChange(smallDevice);
+        handleLargeScreenChange(largeScreen);
+
+        function handleDeviceChange(e) {
+            if (e.matches) chatMobile();
+            else chatDesktop();
+        }
+
+        function handleLargeScreenChange(e) {
+            if (e.matches) profileToogleOnLarge();
+            else profileExtraLarge();
+        }
+
+        function chatMobile() {
+            $chat.addClass("chat--mobile");
+        }
+
+        function chatDesktop() {
+            $chat.removeClass("chat--mobile");
+        }
+
+        function profileToogleOnLarge() {
+            $profile.addClass("user-profile--large");
+        }
+
+        function profileExtraLarge() {
+            $profile.removeClass("user-profile--large");
+        }
+
+        /* ===================================
+            Events
+        ====================================== */
+
+        $(".messaging-member").click(function () {
+            $chat.fadeIn();
+            $chat.addClass("chat--show");
+        });
+
+        $(".chat__previous").click(function () {
+            $chat.removeClass("chat--show");
+        });
+
+        $(".chat__details").click(function () {
+            $profile.fadeIn();
+            $profile.addClass("user-profile--show");
+        });
+
+        $(".user-profile__close").click(function () {
+            $profile.removeClass("user-profile--show");
+        });
+
+        $(".messages-page__dark-mode-toogler").click(function () {
+            $("body").toggleClass("dark-mode");
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -723,12 +723,12 @@ footer .footer_bottom {
     position: relative;
 }
 
+/* 
 footer .footer_bottom:after,
 footer .footer_bottom:before {
     position: absolute;
     display: block;
     content: '';
-    /* left: 0; */
     bottom: 0;
     width: 32%;
     height: 50px;
@@ -740,7 +740,7 @@ footer .footer_bottom:before {
     border-radius: 64.89px 0px 0px 0px;
     right: 0;
 
-}
+} */
 
 @media only screen and (max-width:880px) {
 
